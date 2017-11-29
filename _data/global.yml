@@ -1,0 +1,9 @@
+# Site Settings
+title: 'Dilyan Traykov - Software Developer & Graphic Designer'
+description: "My name is Dilyan Traykov, I'm a software developer and this is my simple CV-like website."
+url: 'http://dtraykov.me'
+footer_text: 'Dilyan Traykov &copy; All rights reserved'
+
+# Admin Settings
+admin_name: 'Dilyan Traykov'
+admin_email: 'dtraykov94@gmail.com'
