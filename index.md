@@ -3,7 +3,7 @@ layout: default
 title: Intro
 ---
 
-## <i class="fa fa-question-circle" aria-hidden="true"></i> Who the \*\*\*\* are you?
+## <i class="fa fa-question-circle" aria-hidden="true"></i> Who the \*\*\*\* am I?
 
 Hello and welcome to my website. My name is **Dilyan Traykov** and I'm a young and ambitious software developer, amateur graphic designer, and professional party animal.
 
@@ -17,15 +17,15 @@ I also like working with **Photoshop** and I've spent a couple of months designi
 
 ### "Don't let schooling interfere with your education."
 
-I studied in the [First English Language School](https://www.fels-sofia.org/) in **Sofia** from **2008** to **2013** where I focused on **English** and **Mathematics**. In this period I help build the school's local **newspaper's website** and participated in the school's football team winning the **Goalscorer trophy** in the **2011/2012** season.
+I studied in the [First English Language School](https://www.fels-sofia.org/) in **Sofia** from **2008** to **2013** where I focused on **English** and **Mathematics**. In this period I helped build the school's local **newspaper's website** and participated in the school's football team winning the **Goalscorer trophy** in the **2011 / 2012** season.
 
-I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** before deciding to drop out. During the same time I got an internship as a Software Developer in 
+I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** before deciding to drop out. During the same time I got an internship as a Web Developer at [Cranial Ink](https://www.cranialink.com/) where I mostly built and maitained WordPress websites.
 
 I then rolled up for the [Telerik Academy](http://telerikacademy.com/) and in just over a year passed more than **15 courses**, most of which with **excellent grades**. I received certificates for my performance in the [C# Developer](http://my.telerikacademy.com/certificates/View/1587/30ce1177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D), [JavaScript Developer](http://my.telerikacademy.com/certificates/View/1684/dc9899b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D) and [Web Front-end Developer](http://my.telerikacademy.com/certificates/View/2179/d3b5390d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D) tracks and graduated from the academy with specialization in [Web Application Development](http://my.telerikacademy.com/certificates/View/1783/0b31ed0f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D).
 
 ## <i class="fa fa-beer" aria-hidden="true"></i> Other Interests
 
-Apart from my 9 to 5 job as a programmer I also *"work"* as a guide at the [New Sofia Pub Crawl](http://www.thenewsofiapubcrawl.com/) where I entertain foreigners with my **stupid jokes**, **lame dance moves** and **boring stories**.
+Apart from my 9 to 5 job as a programmer, I also *"work"* as a guide at the [New Sofia Pub Crawl](http://www.thenewsofiapubcrawl.com/) where I entertain foreigners with my **stupid jokes**, **lame dance moves** and **boring stories**.
 
 As for activities, I really enjoy **board games**, **football**, **billiards**, **tennis**, **beer pong** and pretty much any interaction which stimulates my body and brain.
 
