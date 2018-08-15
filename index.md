@@ -25,7 +25,7 @@ I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two
 
 I then rolled up for the [Telerik Academy](http://telerikacademy.com/) and in just over a year passed more than **15 courses**, most of which with **excellent grades**. I received certificates for my performance in the [C# Developer](http://my.telerikacademy.com/certificates/View/1587/30ce1177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D), [JavaScript Developer](http://my.telerikacademy.com/certificates/View/1684/dc9899b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D) and [Web Front-end Developer](http://my.telerikacademy.com/certificates/View/2179/d3b5390d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D) tracks and graduated from the academy with specialization in [Web Application Development](http://my.telerikacademy.com/certificates/View/1783/0b31ed0f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D).
 
-## <i class="fa fa-hands-helping" aria-hidden="true"></i> Volunteer Work
+## <i class="fas fa-hands-helping" aria-hidden="true"></i> Volunteer Work
 
 I have volunteered on a number of projects including the **Elevation Music Festival** in 2012, the **Balkan Youth Festival** in Sandanski in 2012 and 2013 and just recently came back from a 6-week [AIESEC](http://aiesec.bg/) exchange project in **Wroclaw, Poland** where I teached kids of ages 5 to 15 on various subjects. 
 
