@@ -3,9 +3,9 @@ layout: default
 title: Intro
 ---
 
-## <i class="fa fa-question-circle" aria-hidden="true"></i> Who the \*\*\*\* am I?
+## <i class="fa fa-question-circle" aria-hidden="true"></i> Who am I?
 
-Hello and welcome to my website. My name is **Dilyan Traykov** and I'm a young and ambitious software developer, amateur graphic designer, and professional party animal.
+Hello and welcome to my website! My name is **Dilyan Traykov** and I'm a young and ambitious software developer, amateur graphic designer, and professional party animal.
 
 I currently work as a techical support engineer at [Progress](https://www.progress.com/) and deal with clients who build applications under the **WPF and Silverlight** frameworks. You can observe a small portion of my interaction with other programmers in the [support forums](https://www.telerik.com/forums/wpf). I also write articles for our [online documentation](https://docs.telerik.com/devtools/wpf/introduction) and maintain our [GitHub repository](https://github.com/telerik/xaml-docs).
 
@@ -13,15 +13,21 @@ In my spare time, however, I enjoy participating in coding challenges in website
 
 I also like working with **Photoshop** and I've spent a couple of months designing graphic materials for the [AIESEC](http://aiesec.bg/) NGO where I shortly took the position of **Team Leader of the Communications team**.
 
+I recently purchased a GoPro and have started learning to edit my own videos with **Adobe Premiere**.
+
 ## <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education
 
 ### "Don't let schooling interfere with your education."
 
 I studied in the [First English Language School](https://www.fels-sofia.org/) in **Sofia** from **2008** to **2013** where I focused on **English** and **Mathematics**. In this period I helped build the school's local **newspaper's website** and participated in the school's football team winning the **Goalscorer trophy** in the **2011 / 2012** season.
 
-I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** before deciding to drop out. During the same time I got an internship as a Web Developer at [Cranial Ink](https://www.cranialink.com/) where I mostly built and maitained WordPress websites.
+I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** before deciding to drop out. During the same time I got an internship as a **Web Developer** at [Cranial Ink](https://www.cranialink.com/) where I mostly built and maitained **WordPress** websites.
 
 I then rolled up for the [Telerik Academy](http://telerikacademy.com/) and in just over a year passed more than **15 courses**, most of which with **excellent grades**. I received certificates for my performance in the [C# Developer](http://my.telerikacademy.com/certificates/View/1587/30ce1177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D), [JavaScript Developer](http://my.telerikacademy.com/certificates/View/1684/dc9899b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D) and [Web Front-end Developer](http://my.telerikacademy.com/certificates/View/2179/d3b5390d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D) tracks and graduated from the academy with specialization in [Web Application Development](http://my.telerikacademy.com/certificates/View/1783/0b31ed0f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D).
+
+## <i class="fa fa-hands-helping" aria-hidden="true"></i> Volunteer Work
+
+I have volunteered on a number of projects including the **Elevation Music Festival** in 2012, the **Balkan Youth Festival** in Sandanski in 2012 and 2013 and just recently came back from a 6-week [AIESEC](http://aiesec.bg/) exchange project in **Wroclaw, Poland** where I teached kids of ages 5 to 15 on various subjects. 
 
 ## <i class="fa fa-beer" aria-hidden="true"></i> Other Interests
 
