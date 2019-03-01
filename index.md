@@ -13,7 +13,7 @@ In my spare time, however, I enjoy participating in coding challenges in website
 
 I also like working with **Photoshop** and I've spent a couple of months designing graphic materials for the [AIESEC](http://aiesec.bg/) NGO where I shortly took the position of **Team Leader of the Communications team**.
 
-I recently purchased a GoPro and have started learning to edit my own videos with **Adobe Premiere**.
+I recently purchased a GoPro and have started learning to edit my own videos with **Adobe Premiere**. You can have a look at the ones I've created in the following [YouTube playlist](https://www.youtube.com/playlist?list=PLWFU5U48cQnTxrT-OaUY8vsdKb0VyfTGx).
 
 ## <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education
 
@@ -23,7 +23,7 @@ I studied in the [First English Language School](https://www.fels-sofia.org/) in
 
 I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** before deciding to drop out. During the same time I got an internship as a **Web Developer** at [Cranial Ink](https://www.cranialink.com/) where I mostly built and maitained **WordPress** websites.
 
-I then rolled up for the [Telerik Academy](http://telerikacademy.com/) and in just over a year passed more than **15 courses**, most of which with **excellent grades**. I received certificates for my performance in the [C# Developer](http://my.telerikacademy.com/certificates/View/1587/30ce1177?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D), [JavaScript Developer](http://my.telerikacademy.com/certificates/View/1684/dc9899b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D) and [Web Front-end Developer](http://my.telerikacademy.com/certificates/View/2179/d3b5390d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D) tracks and graduated from the academy with specialization in [Web Application Development](http://my.telerikacademy.com/certificates/View/1783/0b31ed0f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BDu16QdihQg%2BghoNEhjQIWw%3D%3D).
+I then rolled up for the [Telerik Academy](http://telerikacademy.com/) and in just over a year passed more than **15 courses**, most of which with **excellent grades**. I received certificates for my performance in the [C# Developer](http://my.telerikacademy.com/certificates/View/1587/30ce1177), [JavaScript Developer](https://my.telerikacademy.com/certificates/view/1684/dc9899b8), [Web Developer](https://my.telerikacademy.com/Certificates/View/1964/89e94b9a) and [Web Front-end Developer](http://my.telerikacademy.com/certificates/View/2179/d3b5390d) tracks and graduated from the academy with specialization in [Web Application Development](https://my.telerikacademy.com/certificates/view/1783/0b31ed0f).
 
 ## <i class="fas fa-hands-helping" aria-hidden="true"></i> Volunteer Work
 
