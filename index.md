@@ -7,7 +7,7 @@ title: Intro
 
 Hello and welcome to my website! My name is **Dilyan Traykov** and I'm a young and ambitious software developer, amateur graphic designer, and professional party animal.
 
-I currently work as a techical support engineer at [Progress](https://www.progress.com/) and deal with clients who build applications under the **WPF and Silverlight** frameworks. You can observe a small portion of my interaction with other programmers in the [support forums](https://www.telerik.com/forums/wpf). I also write articles for our [online documentation](https://docs.telerik.com/devtools/wpf/introduction) and maintain our [GitHub repository](https://github.com/telerik/xaml-docs).
+I currently work as a technical support engineer at [Progress](https://www.progress.com/) and deal with clients who build applications under the **WPF and Silverlight** frameworks. You can observe a small portion of my interaction with other programmers in the [support forums](https://www.telerik.com/forums/wpf). I also write articles for our [online documentation](https://docs.telerik.com/devtools/wpf/introduction) and maintain our [GitHub repository](https://github.com/telerik/xaml-docs).
 
 In my spare time, however, I enjoy participating in coding challenges in websites such as [CodinGame](https://www.codingame.com/profile/aeba2564473c943a5c7e7799b2122b940304311), [CodeFights](https://codefights.com/profile/dTraykov) and [HackerRank](https://www.hackerrank.com/dtraykov94).
 
@@ -21,9 +21,13 @@ I recently purchased a GoPro and have started learning to edit my own videos wit
 
 I studied in the [First English Language School](https://www.fels-sofia.org/) in **Sofia** from **2008** to **2013** where I focused on **English** and **Mathematics**. In this period I helped build the school's local **newspaper's website** and participated in the school's football team winning the **Goalscorer trophy** in the **2011 / 2012** season.
 
-I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** before deciding to drop out. During the same time I got an internship as a **Web Developer** at [Cranial Ink](https://www.cranialink.com/) where I mostly built and maitained **WordPress** websites.
+I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** before deciding to drop out. During the same time I got an internship as a **Web Developer** at [Cranial Ink](https://www.cranialink.com/) where I mostly built and maintained **WordPress** websites.
 
 I then rolled up for the [Telerik Academy](http://telerikacademy.com/) and in just over a year passed more than **15 courses**, most of which with **excellent grades**. I received certificates for my performance in the [C# Developer](http://my.telerikacademy.com/certificates/View/1587/30ce1177), [JavaScript Developer](https://my.telerikacademy.com/certificates/view/1684/dc9899b8), [Web Developer](https://my.telerikacademy.com/Certificates/View/1964/89e94b9a) and [Web Front-end Developer](http://my.telerikacademy.com/certificates/View/2179/d3b5390d) tracks and graduated from the academy with specialization in [Web Application Development](https://my.telerikacademy.com/certificates/view/1783/0b31ed0f).
+
+In the summer of 2018 I actually decided that it may be a good idea to finally finish my studies and get a diploma. I signed up for the **New Bulgarian University** in Sofia and got accreditation for my two years in Sofia University so I started my studies from the 3rd year. In my last year, I decided to go on the **Erasmus** program and spent my last official semester in **Zagreb** where I had lots of fun. You can see some videos from this amazing experience in my dedicated [What Did Dido Do](https://www.youtube.com/channel/UCbFEUhsx6m3c0ey48cZ9m7Q) channel on YouTube.
+
+Sadly, I had to come back to Sofia in July, but I did not spend much time here as we organized a number of trips with my new Erasmus friends. I then decided to sign up for **ESN** in Sofia and am now an [official member](https://accounts.esn.org/user/dtraykov), taking my weekly dose of Erasmus experience.
 
 ## <i class="fas fa-hands-helping" aria-hidden="true"></i> Volunteer Work
 
