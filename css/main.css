@@ -2953,6 +2953,15 @@
 					#header h1 br {
 						display: inline;
 					}
+		/* Navigation */
+
+			nav {
+				text-align: center;
+			}
+				nav ul li {
+					display: inline-block;
+					padding: 0 0.5em 0 0.5em;
+				}	
 
 		/* Footer */
 
