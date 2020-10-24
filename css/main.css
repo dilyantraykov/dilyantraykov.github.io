@@ -2503,6 +2503,30 @@
 			width: 6.25em;
 		}
 
+/* Navigation */
+
+	nav {
+		text-align: right;
+		overflow: hidden;
+		font-size: 1.3em;
+	}
+
+		nav ul {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		nav ul li {
+			display: inline-block;
+			padding: 0 0 0 1em;
+		}
+
+		nav ul a {
+			margin-left: 10px;
+			border-bottom: none;
+			text-decoration: none;
+		}
+
 /* Footer */
 
 	#footer {

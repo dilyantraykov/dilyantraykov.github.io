@@ -3,11 +3,11 @@ layout: default
 title: Intro
 ---
 
-## <i class="fa fa-question-circle" aria-hidden="true"></i> Who am I?
+<h2 id="intro"><i class="fa fa-question-circle" aria-hidden="true"></i>Who am I?</h2>
 
-Hello and welcome to my website! My name is **Dilyan Traykov** and I'm a young and ambitious software developer, amateur graphic designer, and professional party animal.
+Hi! My name is... What? My name is... Who? My name is **Dilyan Traykov**! I'm a young and ambitious software developer, amateur graphic designer, and professional party animal.
 
-I currently work as a technical support engineer at [Progress](https://www.progress.com/) and deal with clients who build applications under the **WPF and Silverlight** frameworks. You can observe a small portion of my interaction with other programmers in the [support forums](https://www.telerik.com/forums/wpf). I also write articles for our [online documentation](https://docs.telerik.com/devtools/wpf/introduction) and maintain our [GitHub repository](https://github.com/telerik/xaml-docs).
+I currently work as a technical support engineer at [Progress](https://www.progress.com/) and assist clients who build applications under the **WPF and Silverlight** frameworks. You can observe a small portion of my interaction with other programmers in the [support forums](https://www.telerik.com/forums/wpf). I also write articles for our [online documentation](https://docs.telerik.com/devtools/wpf/introduction) and maintain our [GitHub repository](https://github.com/telerik/xaml-docs).
 
 In February 2018 I became a [Microsoft Certified Professional](certificates/MCP.jpg) after first passing exams in [Software Development Fundamentals](https://www.youracclaim.com/badges/151e8110-a845-476e-bf6d-4d311780b359) and [Programming in C#](https://www.youracclaim.com/badges/e3a145bb-659d-42e1-baf1-ea10efbf9674).
 
@@ -17,7 +17,7 @@ I also like working with **Photoshop** and I've spent a couple of months designi
 
 I recently purchased a GoPro and have started learning to edit my own videos with **Adobe Premiere**. You can have a look at the ones I've created in the following [YouTube playlist](https://www.youtube.com/playlist?list=PLWFU5U48cQnTxrT-OaUY8vsdKb0VyfTGx) as well as my new YouTube channel [What Did Dido Do](https://www.youtube.com/channel/UCbFEUhsx6m3c0ey48cZ9m7Q).
 
-## <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education
+<h2 id="education"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
 
 ### "Don't let schooling interfere with your education."
 
@@ -35,11 +35,13 @@ To my surprise, I achieved a level of **C2** on my final [language assessment](c
 
 Sadly, I had to come back to Sofia in July, but I did not spend much time here as we organized a number of trips with my new Erasmus friends. I then decided to sign up for **ESN** in Sofia and am now an [official member](https://accounts.esn.org/user/dtraykov), taking my weekly dose of Erasmus experience.
 
-## <i class="fas fa-hands-helping" aria-hidden="true"></i> Volunteer Work
+<h2 id="volunteer-work"><i class="fas fa-hands-helping" aria-hidden="true"></i>Volunteer Work</h2>
 
-I have volunteered on a number of projects including the **Elevation Music Festival** in 2012, the **Balkan Youth Festival** in Sandanski in 2012 and 2013 and just recently came back from a 6-week [AIESEC](http://aiesec.bg/) exchange project in **Wroclaw, Poland** where I taught kids of ages 5 to 15 on various subjects. Here is my [certificate](certificates/AIESEC_Global_Volunteer.pdf) from this interesting project.
+I have volunteered on a number of projects including the **Elevation Music Festival** in 2012, the **Balkan Youth Festival** in Sandanski in 2012 and 2013.
 
-## <i class="fa fa-beer" aria-hidden="true"></i> Other Interests
+In 2018, I also did a 6-week [AIESEC](http://aiesec.bg/) exchange project in **Wroclaw, Poland** where I taught kids of ages 5 to 15 on various subjects. Here is my [certificate](certificates/AIESEC_Global_Volunteer.pdf) from this interesting adventure.
+
+<h2 id="other-interests"><i class="fa fa-beer" aria-hidden="true"></i>Other Interests</h2>
 
 Apart from my 9 to 5 job as a programmer, I also *"work"* as a guide at the [New Sofia Pub Crawl](http://www.thenewsofiapubcrawl.com/) where I entertain foreigners with my **stupid jokes**, **lame dance moves** and **boring stories**.
 
@@ -50,7 +52,7 @@ I sometimes participate in different marathons and take pride in my achievements
 * [Brutus Run](https://www.irun.bg/external.php/competition/result/name/brutus-run-2017/distance/378): **21km for 3h 55min** in -5 degrees with different challenges along the way after getting lost 2 times.
 * [The Big Tech Run](https://techrun.bg/results-2016-2/): **10km for 49min 13sec**.
 
-## <i class="fa fa-envelope" aria-hidden="true"></i> Contact Me
+<h2 id="contact-me"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Me</h2>
 
 Do you find this website **lame** and **uninformative**? I do too.
 
