@@ -1,5 +1,14 @@
 <!doctype html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K3K7FY7T0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-0K3K7FY7T0');
+    </script>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} > {{ site.data.global.title }}{% elsif post.title %}{{ post.title }} > {{ site.data.global.title }}{% else %}{{ site.data.global.title }} > {{ site.data.global.description }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
