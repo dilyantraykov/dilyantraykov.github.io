@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
-	Uri="file:///D:/Programming/PieMiSe/PieMiSe.Installer/PieMiSe.Package.appinstaller"
+	Uri="./PieMiSe.Package.appinstaller"
 	Version="1.0.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
 	<MainBundle
 		Name="09bc0f90-a5a8-405e-ada8-04e5ce942091"
 		Version="1.0.0.0"
 		Publisher="CN=Dilyan Traykov"
-		Uri="file:///D:/Programming/PieMiSe/PieMiSe.Installer/PieMiSe.Package_1.0.0.0_Debug_Test/PieMiSe.Package_1.0.0.0_x86_x64_Debug.msixbundle" />
+		Uri="./PieMiSe.Package_1.0.0.0_Debug_Test/PieMiSe.Package_1.0.0.0_x86_x64_Debug.msixbundle" />
 	<UpdateSettings>
 		<OnLaunch
 			HoursBetweenUpdateChecks="0" />
