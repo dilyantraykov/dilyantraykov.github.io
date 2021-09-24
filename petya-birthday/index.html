@@ -11,15 +11,21 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div id="grid" class="center">
-        <div id="quiz" class="center">
+    <div id="grid">
+        <div id="start-page">
+            <p id="intro">Честит рожден ден, Пацо!<br />Подготвил съм ти малка изненадка, но за да си я получиш, ще трябва да я заслужиш, отговаряйки на въпросите, които ще се появяват отдолу!<br />
+            Ако си готова, нека да започваме!</p>
+            <input onclick="start()" id="start-button" type="submit" value="Започни" />
+        </div>
+        <div id="quiz" class="invisible">
             <p id="question"></p>
             <div id="resource"></div>
-            <div class="input">
+            <form id="input-form" autocomplete="off" class="input">
                 <input id="answer-textbox" placeholder="Въведи отговора тук..." type="text" />
-                <input id="guess-button" type="button" value="Отговори" />
-            </div>
+                <input id="guess-button" type="submit" value="Отговори" />
+            </form>
             <p id="tip"></p>
+            </div>
         </div>
     </div>
 
