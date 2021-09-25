@@ -100,6 +100,7 @@ function showEnd() {
 
 var questions = [
     new Question("Коя е героинята, по която всички симпваха в началото на League of Legends?", "Катарина", "<img src='resources/league-of-legends.jpg'/>", "#F79328", "пробвай на кирилица"),
+    new Question("Каква беше първата ви вечеря заедно с Влади, след като се нанесохте?", "Китайско", "<img src='resources/food.jpg'/>", "#EC312A"),
     new Question("Как се казва \"пиратският\" кораб, който плава с туристи към Атон?", "Menia Maria", "<img src='resources/ship.jpg'/>", "#4E698C", "Името на кораба се римува с пълното име на любимата ни позната - Ая."),
     new Question("\"And I said?\"", "Bitch", "<img src='resources/bitch.jpg'/>", "#5B7D49"),
     new Question("Кой е любимият цвят на Дидо?", "син", "<img src='resources/colors.jpg'/>", "#A23090"),
@@ -111,6 +112,7 @@ var questions = [
     new Question("Къде за първи път гледа \"Игра на Тронове\"?", "Ормос Панагиас", "<img src='resources/got.jpg'/>", "#393C3B", "Най-скучното гръцко селце евар."),
     new Question("Сканирай кода отдолу и виж какво ще намериш. Кой град би асоциирала с откритото поздравче?", "букурещ", "<img src='resources/youtube-code.png'/>", "#d0021b"),
     new Question("Какво е най-вкусното нещо, което можеше да си вземеш от лафката на 138-мо?", "сандвич с маслини", "<img src='resources/138.jpg'/>", "#A37B70"),
+    new Question("Кой е първият сериал, който гледахме заедно?", "Money Heist", "<img src='resources/tv-series.jpg'/>", "#1F2025", "гледахме само няколко епизода"),
     new Question("Какъв е ароматът на една вилорайска зимна вечер през 2017, сгушени в леглото пред телевизора?", "на агнешко", "<img src='resources/ribaritsa.jpg'/>", "#6C752C", "отговорът е във формат 'на ...'"),
     new Question("Разбери как да откриеш песента, която съответства на кода отдолу в Spotify. Като намериш песента, се почувствай поздравена и въведи името й.", "say you won't let go", "<img src='resources/spotify-code.jpeg'/>", "#025b0e"),
 ];
