@@ -10,7 +10,7 @@ html {
 body {
     background: #561D25;
     min-height: 100%;
-    font-family: 'Lobster', cursive;
+    font-family: 'Amatic SC', cursive;
     color: white;
     margin: 0;
     box-sizing: border-box;
@@ -38,8 +38,8 @@ body {
     margin: 1em auto;
 }
 
-#intro, #question {
-    font-size: 2.2em;
+#grid h1, #grid p {
+    font-size: 3em;
     color: white;
 }
 
@@ -49,8 +49,17 @@ body {
     margin: 1em;
 }
 
+#resource > iframe {
+    max-height: 400px;
+}
+
+#resource > img {
+    border-radius: 0.5em;
+    border: 0.2em solid white;
+}
+
 #tip {
-    font-size: 1.2em;
+    font-size: 2em;
     max-width: 80%;
     margin: 0.2em auto;
 }
@@ -64,7 +73,8 @@ body {
 }
 
 input {
-    font-size: 1.5em;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
     margin: 5px;
     appearance: none;
     outline: none;
@@ -72,6 +82,7 @@ input {
     border-radius: 0;
     border: none;
     padding: 1em;
+    border-radius: 0.5em;
 }
 
 input[type=text] {
@@ -82,7 +93,8 @@ input[type=text] {
 }
 
 input[type=submit] {
-    font-family: 'Lobster', cursive;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
     cursor: pointer;
     background: #cbcbcb;
     color: #333;
@@ -99,10 +111,20 @@ input[type=submit]:hover {
     }
 
     input[type=text], input[type=submit] {
-        width: 100%;
+        width: 90%;
+        padding: 0.5em; 
     }
 
-    #intro, #question {
-        font-size: 1.8em;
+    #grid h1, #grid p {
+        font-size: 2em;
+    }
+
+    #tip {
+        font-size: 1.5em;
+    }
+
+    #resource > * {
+        max-width: 90%;
+        margin: 0.5em, 0;
     }
 }
