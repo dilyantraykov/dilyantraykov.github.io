@@ -65,7 +65,7 @@ function makeGuess() {
         populate();
         answerTextBox.classList.remove("wrong-answer");
         answerTextBox.value = "";
-        //answerTextBox.focus();
+        answerTextBox.blur();
         tip.innerText = "";
     }
     else
