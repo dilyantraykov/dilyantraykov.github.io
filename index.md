@@ -7,17 +7,19 @@ title: Intro
 
 Hi! My name is... What? My name is... Who? My name is **Dilyan Traykov**! I'm a young and ambitious software developer, amateur graphic designer, and board-game enthusiast.
 
-<img src="images/maui.jpg" style="float: right" alt=".NET MAUI" />
+<img src="images/maui.jpg" style="float: right; width: 100px; margin-left: 1em" alt=".NET MAUI" />
 
 I currently work as a software developer at [Progress](https://www.progress.com/) where I develop components, features and resolve bugs for the [Telerik UI for MAUI](https://www.telerik.com/maui-ui) suite.
 
 Prior to this, I was a senior technical support engineer and assisted clients who build applications under the **WinUI, WPF and Silverlight** frameworks. You can observe a small portion of my interaction with other programmers in the [support forums](https://www.telerik.com/forums/wpf). I also write articles for our [online documentation](https://docs.telerik.com/devtools/wpf/introduction) and maintain our [GitHub repository](https://github.com/telerik/xaml-docs).
 
-<img src="images/mcp.svg" style="float: left; width: 100px" alt=".NET MAUI" />
+<img src="images/mcp.svg" style="float: left; width: 100px; margin-right: 1em" alt=".NET MAUI" />
 
 In February 2018 I became a [Microsoft Certified Professional](certificates/MCP.jpg) after first passing exams in [Software Development Fundamentals](https://www.youracclaim.com/badges/151e8110-a845-476e-bf6d-4d311780b359) and [Programming in C#](https://www.youracclaim.com/badges/e3a145bb-659d-42e1-baf1-ea10efbf9674).
 
 In my spare time, however, I enjoy participating in coding challenges in websites such as [CodinGame](https://www.codingame.com/profile/aeba2564473c943a5c7e7799b2122b940304311), [CodeFights](https://codefights.com/profile/dTraykov) and [HackerRank](https://www.hackerrank.com/dtraykov94).
+
+I recently started studying **Machine Learning** and already finished a few courses, including Kaggle's [Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning). Here's my [certificate](certificates/kaggle-ml-course.png) from the course.
 
 I also like working with **Photoshop** and I've spent a couple of months designing graphic materials for the [AIESEC](http://aiesec.bg/) NGO where I shortly took the position of **Team Leader of the Communications team**.
 
