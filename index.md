@@ -9,9 +9,11 @@ Hi! My name is... What? My name is... Who? My name is **Dilyan Traykov**! I'm a 
 
 <img src="images/maui.jpg" style="float: right; width: 100px; margin-left: 1em" alt=".NET MAUI" />
 
-I currently work as a software developer at [Progress](https://www.progress.com/) where I develop components, features and resolve bugs for the [Telerik UI for MAUI](https://www.telerik.com/maui-ui) suite.
+I currently work as a .NET developer at [EGT Digital](https://egt-digital.com/) where I create functionality and fix issues for the Sports Betting Module of our X-Nave platform which is used by a number of bookmaker websites.
 
-Prior to this, I was a senior technical support engineer and assisted clients who build applications under the **WinUI, WPF and Silverlight** frameworks. You can observe a small portion of my interaction with other programmers in the [support forums](https://www.telerik.com/forums/wpf). I also write articles for our [online documentation](https://docs.telerik.com/devtools/wpf/introduction) and maintain our [GitHub repository](https://github.com/telerik/xaml-docs).
+I previously worked as a software developer at [Progress](https://www.progress.com/) where I developed components and features and resolved bugs for the [Telerik UI for MAUI](https://www.telerik.com/maui-ui) suite.
+
+Prior to this, I was a senior technical support engineer and assisted clients who build applications under the **WinUI, WPF and Silverlight** frameworks. You can observe a small portion of my interaction with other programmers in the [support forums](https://www.telerik.com/forums/wpf). I also wrote articles for our [online documentation](https://docs.telerik.com/devtools/wpf/introduction) and maintained our [GitHub repository](https://github.com/telerik/xaml-docs).
 
 <img src="images/mcp.svg" style="float: left; width: 100px; margin-right: 1em" alt=".NET MAUI" />
 
@@ -49,7 +51,7 @@ I have volunteered on a number of projects including the **Elevation Music Festi
 
 In 2018, I also did a 6-week [AIESEC](http://aiesec.bg/) exchange project in **Wroclaw, Poland** where I taught kids of ages 5 to 15 on various subjects. Here is my [certificate](certificates/AIESEC_Global_Volunteer.pdf) from this interesting adventure.
 
-<h2 id="other-interests"><i class="fa fa-beer" aria-hidden="true"></i>Other Interests</h2>
+<h2 id="other-interests"><i class="fa fa-gamepad" aria-hidden="true"></i>Other Interests</h2>
 
 Apart from my 9 to 5 job as a programmer, I also *"worked"* as a **guide** at the [New Sofia Pub Crawl](http://www.thenewsofiapubcrawl.com/) where I entertained foreigners with my **stupid jokes**, **lame dance moves** and **boring stories**.
 
@@ -59,6 +61,12 @@ I sometimes participate in different marathons and take pride in my achievements
 * [Vitosha 100](certificates/vitosha-100.pdf): **100km for 18h 52min** after almost zero preparation.
 * [Brutus Run](https://www.irun.bg/external.php/competition/result/name/brutus-run-2017/distance/378): **21km for 3h 55min** in -5 degrees with different challenges along the way after getting lost 2 times.
 * [The Big Tech Run](https://techrun.bg/results-2016-2/): **10km for 49min 13sec**.
+
+<h2 id="piemise"><i class="fa fa-beer" aria-hidden="true"></i>PieMiSe</h2>
+
+I recently created a simple drinking game which you can play with your friends when you're bored and want to get silly for a change. It is available on the Windows Store and you can download it by clicking the following button:
+
+<a href='https://apps.microsoft.com/detail/9n670sbffmnd'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' style='width: 142px; height: 52px;'/></a>
 
 <h2 id="contact-me"><i class="fa fa-envelope" aria-hidden="true"></i>Contact Me</h2>
 
