@@ -20,10 +20,6 @@
     "description": "{0}, name {1}'s favorite color or take 2 sips."
   },
   {
-    "title": "Preference",
-    "description": "You'd rather drink water the whole night или бихте черпили всички през цялата вечер? Vote at the same time, losers take 2 sips."
-  },
-  {
     "title": "Big Heart",
     "description": "Everyone with a big heart who's donated to charity in the last 3 months can give out 2 sips."
   },
@@ -90,11 +86,11 @@
   },
   {
     "title": "Lame Post",
-    "description": "{0}, write a lame post on Facebook using the words \"anaconda\", \"amazed\", \"{1}\" и \"confused\". If you refuse, drink 3 sips!"
+    "description": "{0}, write a lame post on Facebook using the words \"anaconda\", \"amazed\", \"{1}\" and \"confused\". If you refuse, drink 3 sips!"
   },
   {
     "title": "Lame Post",
-    "description": "{0}, write a lame post on Facebook using the words \"arbitrary\", \"photosynthesis\", \"{1}\" и \"cosine\". If you refuse, drink 3 sips!"
+    "description": "{0}, write a lame post on Facebook using the words \"arbitrary\", \"photosynthesis\", \"{1}\" and \"cosine\". If you refuse, drink 3 sips!"
   },
   {
     "title": "Safety First!",
@@ -187,7 +183,7 @@
     "description": "{0}, who do you think would react worse to being cheated on, {1} or {2}? The chosen one can give out 3 sips."
   },
   {
-    "description": "Would you rather posses telekinetic abilities or be able to teleport? Vote at the same time. The minority takes 4 пъти."
+    "description": "Would you rather posses telekinetic abilities or be able to teleport? Vote at the same time. The minority takes 4 sips."
   },
   {
     "description": "{0}, if you were more than 20 years old when you first had sex, drink 2 times."
