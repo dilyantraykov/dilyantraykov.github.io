@@ -61,7 +61,7 @@
   },
   {
     "title": "Regrets",
-    "description": "Drink 2 times if you've ever regretted having sex with someone."
+    "description": "Drink 2 times if you've ever regretted having slept with someone."
   },
   {
     "description": "{0}, what is the capital of Tajikistan? If you can't answer, drink twice."
@@ -176,7 +176,7 @@
   },
   {
     "title": "Shame",
-    "description": "Drink twice if you've had sex with a person from the room."
+    "description": "Drink twice if you've hooked up with a person from the room."
   },
   {
     "title": "Cheating",
@@ -184,10 +184,7 @@
   },
   {
     "description": "Would you rather posses telekinetic abilities or be able to teleport? Vote at the same time. The minority takes 4 sips."
-  },
-  {
-    "description": "{0}, if you were more than 20 years old when you first had sex, drink 2 times."
-  },
+  }
   {
     "description": "{0}, imitate a worm for 10 seconds or take 5 sips."
   },
@@ -248,19 +245,11 @@
   {
     "title": "Superman or Batman?",
     "description": "Vote at the same time. The minority takes 3 times."
-  },
-  {
-    "title": "Sex Poses",
-    "description": "Starting with {0}, list poses from the Kama Sutra. First one to take more than 3 seconds or repeat a name drinks 2 sips."
-  },
+  }
   {
     "title": "Yes, master!",
     "description": "{0} fulfill an order given to you by {1}. If you refuse or cannot fulfill it, drink 3 times."
-  },
-  {
-    "title": "Shame",
-    "description": "Drink 2 times if you've ever masturbated at work."
-  },
+  }
   {
     "title": "Roomies",
     "description": "{0}, if you've ever had a roommate, take 2 sips. Otherwise, give them to someone."
@@ -276,13 +265,7 @@
   {
     "title": "Challenge",
     "description": "{0}, give a challenge to {1}. If they complete it, they can give out 4 sips."
-  },
-  {
-    "description": "Drink 2 times if you've ever had sex while there were people sleeping in the same room."
-  },
-  {
-    "description": "Drink 2 times if you have had sex in a public toilet."
-  },
+  }
   {
     "description": "{0}, from now on, you are not allowed to use the letter \"S\". If you break this rule, you must drink 2 times."
   },
