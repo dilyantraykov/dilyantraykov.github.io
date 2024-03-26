@@ -184,7 +184,7 @@
   },
   {
     "description": "Would you rather posses telekinetic abilities or be able to teleport? Vote at the same time. The minority takes 4 sips."
-  }
+  },
   {
     "description": "{0}, imitate a worm for 10 seconds or take 5 sips."
   },
@@ -245,11 +245,11 @@
   {
     "title": "Superman or Batman?",
     "description": "Vote at the same time. The minority takes 3 times."
-  }
+  },
   {
     "title": "Yes, master!",
     "description": "{0} fulfill an order given to you by {1}. If you refuse or cannot fulfill it, drink 3 times."
-  }
+  },
   {
     "title": "Roomies",
     "description": "{0}, if you've ever had a roommate, take 2 sips. Otherwise, give them to someone."
@@ -265,7 +265,7 @@
   {
     "title": "Challenge",
     "description": "{0}, give a challenge to {1}. If they complete it, they can give out 4 sips."
-  }
+  },
   {
     "description": "{0}, from now on, you are not allowed to use the letter \"S\". If you break this rule, you must drink 2 times."
   },
