@@ -322,5 +322,285 @@
   {
     "title": "Liar Liar",
     "description": "{0}, who do you think is the bigger liar, {1} or {2}? Pinocchio must take 2 sips."
+  },
+  {
+    "title": "Skinny Dipping",
+    "description": "Take 3 sips if you've ever skinny dipped."
+  },
+  {
+    "title": "Jeans Squad",
+    "description": "Everyone who's wearing jeans must take a sip!"
+  },
+  {
+    "title": "Embarrassing Stories",
+    "description": "{0}, tell your most embarrassing story or drink 3 times."
+  },
+  {
+    "title": "Social Media Fame",
+    "description": "{0}, got over 500 followers? If so, give out 3 sips, if not - you must drink them!"
+  },
+  {
+    "title": "Globetrotters",
+    "description": "Everyone who's traveled to 15+ countries can give out 2 sips."
+  },
+  {
+    "title": "Drink Swap",
+    "description": "{0}, swap drinks with {1}."
+  },
+  {
+    "title": "Geography Challenge",
+    "description": "{0}, name a country. First person to shout out that country's capital can give out 2 sips."
+  },
+  {
+    "title": "iPhone Crew",
+    "description": "Everyone who owns an iPhone must drink 2 times!"
+  },
+  {
+    "title": "Drama Queen",
+    "description": "{0}, ever been in a play? If so, give out 2 sips, if not - you must take them!"
+  },
+  {
+    "title": "Longest Hair",
+    "description": "The person with the longest hair in the room can give out 3 sips."
+  },
+  {
+    "title": "Colorful Hair",
+    "description": "{0}, if you've ever dyed your hair wild colors, drink 2 times!"
+  },
+  {
+    "title": "Pet Owners Unite",
+    "description": "Everyone who owns a pet, drink 2 times!"
+  },
+  {
+    "title": "Last Photo",
+    "description": "{0}, show us your last photo or drink 3 times."
+  },
+  {
+    "title": "Piercing Count",
+    "description": "Everyone with 3+ piercings, give out 2 sips."
+  },
+  {
+    "title": "Quick Reflexes",
+    "description": "Last person to raise their hand must drink 2 times!"
+  },
+  {
+    "title": "Time Watchers",
+    "description": "Everyone wearing a watch, drink 2 times!"
+  },
+  {
+    "title": "Bone Breakers",
+    "description": "{0}, if you've ever broken a bone, give out 2 sips."
+  },
+  {
+    "title": "Small Feet",
+    "description": "The person with the smallest shoe size in the room can give out 3 sips."
+  },
+  {
+    "title": "Big Brother, Big Sister",
+    "description": "Oldest sibling here? Give out 3 sips."
+  },
+  {
+    "title": "Music Maestro",
+    "description": "{0}, if you can play an instrument, give out 2 sips."
+  },
+  {
+    "title": "Last Text",
+    "description": "Who texted {0} last? Drink 2 times."
+  },
+  {
+    "title": "We Don't Need No Education",
+    "description": "Everyone without a bachelor's diploma must drink 2 times!"
+  },
+  {
+    "title": "TV Star",
+    "description": "{0}, if you've ever been on TV, give out 3 sips."
+  },
+  {
+    "title": "Specs Squad",
+    "description": "Everyone wearing glasses, drink 2 times!"
+  },
+  {
+    "title": "Crash Survivor",
+    "description": "{0}, if you've ever been in a car crash, give out 2 sips."
+  },
+  {
+    "title": "App Hoarder",
+    "description": "The person with the most apps on their phone can give out 3 sips."
+  },
+  {
+    "title": "Concert Goer",
+    "description": "Everyone who's been to a concert this month, drink 2 times!"
+  },
+  {
+    "title": "Ink Lovers",
+    "description": "{0}, if you have a tattoo, give out 2 sips."
+  },
+  {
+    "title": "Red Alert",
+    "description": "Everyone wearing red, drink 2 times!"
+  },
+  {
+    "title": "Multilingual",
+    "description": "{0}, if you speak more than two languages, give out 2 sips."
+  },
+  {
+    "title": "Unread Emails",
+    "description": "The person with the most unread emails must drink 2 times!"
+  },
+  {
+    "title": "Adrenaline Junkie",
+    "description": "Everyone who's ever bungee jumped, drink 2 times!"
+  },
+  {
+    "title": "Wedding Guest",
+    "description": "{0}, if you've been to more than one wedding this year, give out 2 sips."
+  },
+  {
+    "title": "Licensed Drivers",
+    "description": "Everyone with a driver's license, drink 2 times!"
+  },
+  {
+    "title": "Marathon Runner",
+    "description": "{0}, if you've ever run a marathon, give out 3 sips."
+  },
+  {
+    "title": "Push-Up Champ",
+    "description": "The person who can do the most push-ups in a minute can give out 3 sips."
+  },
+  {
+    "title": "Workaholic",
+    "description": "Everyone working two jobs, can give out 2 sips!"
+  },
+  {
+    "title": "Blind Date",
+    "description": "{0}, if you've ever been on a blind date, give out 2 sips."
+  },
+  {
+    "title": "Big Family",
+    "description": "The person with the most siblings here can give out 3 sips."
+  },
+  {
+    "title": "Biker",
+    "description": "Everyone who's ever ridden a motorcycle can give out 2 sips!"
+  },
+  {
+    "title": "Celeb Crush",
+    "description": "{0}, if you have a celeb crush, drink 2 sips."
+  },
+  {
+    "title": "Happy Camper",
+    "description": "Everyone who's gone camping, drink 2 times!"
+  },
+  {
+    "title": "Contest Winner",
+    "description": "{0}, if you've ever won a contest, give out 2 sips."
+  },
+  {
+    "title": "Caffeine Addict",
+    "description": "Everyone who's had coffee today must drink 2 times!"
+  },
+  {
+    "title": "Gambler",
+    "description": "Everyone who's ever been to a casino must drink 2 times!"
+  },
+  {
+    "title": "Cruiser",
+    "description": "{0}, if you've ever been on a cruise, give out 2 sips."
+  },
+  {
+    "title": "Snack Attack",
+    "description": "The last person who had a snack must drink 2 times!"
+  },
+  {
+    "title": "Horse Rider",
+    "description": "Everyone who's ever ridden a horse must drink 2 times!"
+  },
+  {
+    "title": "Scuba Diver",
+    "description": "{0}, if you've ever gone scuba diving, give out 2 sips."
+  },
+  {
+    "title": "Short Name",
+    "description": "The person with the shortest name can give out 3 sips."
+  },
+  {
+    "title": "Currency Knowledge",
+    "description": "{0}, name the currency used in Japan. If you can't answer, drink once."
+  },
+  {
+    "title": "Geography Challenge",
+    "description": "{0}, how many continents are there? If you can't answer, drink twice."
+  },
+  {
+    "title": "Art Trivia",
+    "description": "{0}, who painted the Mona Lisa? If you can't answer, drink once."
+  },
+  {
+    "title": "Chemistry Quiz",
+    "description": "{0}, what's the chemical symbol for gold? If you can't answer, drink three times."
+  },
+  {
+    "title": "Historical Inquiry",
+    "description": "{0}, in which year did the Titanic sink? If you can't answer, drink twice."
+  },
+  {
+    "title": "Literature Challenge",
+    "description": "{0}, who wrote 'Romeo and Juliet'? If you can't answer, drink once."
+  },
+  {
+    "title": "Capital Knowledge",
+    "description": "{0}, what's the capital city of Australia? If you can't answer, drink three times."
+  },
+  {
+    "title": "Astronomy Trivia",
+    "description": "{0}, how many planets are in our solar system? If you can't answer, drink twice."
+  },
+  {
+    "title": "Geography Inquiry",
+    "description": "{0}, what's the largest ocean on Earth? If you can't answer, drink once."
+  },
+  {
+    "title": "Chemistry Challenge",
+    "description": "{0}, what's the chemical formula for water? If you can't answer, drink twice."
+  },
+  {
+    "title": "Humor Showdown",
+    "description": "{0}, who's funnier - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Fame Prediction",
+    "description": "{0}, who's more likely to become famous - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Cooking Skills",
+    "description": "{0}, who's the better cook - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Fight Prediction",
+    "description": "{0}, who's more likely to win in a fight - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Adventure Preference",
+    "description": "{0}, who's more adventurous - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Dance Off",
+    "description": "{0}, who's better at dancing - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Survival Instinct",
+    "description": "{0}, who's more likely to survive on a deserted island - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Movie Emotions",
+    "description": "{0}, who's more likely to cry during a movie - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Secret Keeper",
+    "description": "{0}, who's better at keeping secrets - {1} or {2}? The chosen one can give out 3 sips."
+  },
+  {
+    "title": "Wealth Prediction",
+    "description": "{0}, who's more likely to become a millionaire - {1} or {2}? The chosen one can give out 3 sips."
   }
 ]
