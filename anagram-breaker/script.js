@@ -1,7 +1,50 @@
 let originalWord = "";
+let letterGroups = [
+    ["к", "у", "р"],
+    ["п", "у", "т", "к", "а"],
+    ["п", "е", "н", "и", "с"]
+];
+
+function removeFirstOccurrence(word, letter) {
+    const index = word.indexOf(letter);
+    if (index !== -1) {
+        return word.slice(0, index) + word.slice(index + 1);
+    }
+    return word;
+}
+
+function isGroupPresent(word, group) {
+    return group.every(letter => word.includes(letter));
+}
 
 function shuffleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    let groupedLetters = [];
+    let remainingLetters = [];
+    let groupFound = false;
+    var finalWord = word;
+
+    letterGroups.forEach(group => {
+        if (!groupFound && isGroupPresent(word, group)) {
+            groupedLetters.push(group.join(''));
+            group.forEach(letter => {
+                finalWord = removeFirstOccurrence(finalWord, letter);
+            });
+
+            console.log(finalWord);
+            groupFound = true;
+        }
+    });
+
+    remainingLetters = finalWord.split('').sort(() => Math.random() - 0.5);
+
+    let shuffledWord = [...remainingLetters];
+
+    groupedLetters.forEach(group => {
+        let randomPosition = Math.floor(Math.random() * (shuffledWord.length + 1));
+        shuffledWord.splice(randomPosition, 0, group);
+    });
+
+    return shuffledWord.join('');
 }
 
 async function loadWords() {
@@ -15,7 +58,7 @@ async function newWord() {
     const minLength = parseInt(document.getElementById("minLength").value); // Get selected minimum length
 
     // Filter words based on the selected minimum length
-    const filteredWords = words.filter(word => word.length >= minLength && word.length <= minLength + 1);
+    const filteredWords = words.filter(word => word.length >= 0);
 
     if (filteredWords.length === 0) {
         document.getElementById("word").textContent = "Няма налични думи с тази дължина!";
