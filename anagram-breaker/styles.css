@@ -22,7 +22,7 @@ input[type="text"] {
     font-size: 18px;
     padding: 10px;
     margin: 10px;
-    width: 200px;
+    width: 300px;
     border: 2px solid #007bff;
     border-radius: 5px;
     outline: none;
@@ -53,6 +53,10 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+button {
+    display: inline-flex; /* Keep buttons on the same row */
 }
 
 #result {
@@ -90,4 +94,20 @@ select {
 
 select:focus {
     border-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    button {
+        display: block;
+        width: 320px;
+        margin: 5px auto;
+    }
+
+    button i {
+        font-size: 20px;
+    }
+    
+    button span {
+        font-size: 16px;
+    }
 }
