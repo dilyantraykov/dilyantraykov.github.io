@@ -55,10 +55,10 @@ async function loadWords() {
 
 async function newWord() {
     const words = await loadWords();
-    const minLength = parseInt(document.getElementById("minLength").value); // Get selected minimum length
+    const minLength = parseInt(document.getElementById("minLength").value); 
 
     // Filter words based on the selected minimum length
-    const filteredWords = words.filter(word => word.length >= 0);
+    const filteredWords = words.filter(word => word.length >= minLength && word.length <= minLength + 1);
 
     if (filteredWords.length === 0) {
         document.getElementById("word").textContent = "Няма налични думи с тази дължина!";
