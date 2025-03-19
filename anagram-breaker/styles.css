@@ -22,7 +22,7 @@ input[type="text"] {
     font-size: 18px;
     padding: 10px;
     margin: 10px;
-    width: 300px;
+    width: 200px;
     border: 2px solid #007bff;
     border-radius: 5px;
     outline: none;
@@ -97,6 +97,10 @@ select:focus {
 }
 
 @media (max-width: 768px) {
+    input[type="text"] {
+        width: 300px;
+    }
+
     button {
         display: block;
         width: 320px;
