@@ -8,7 +8,8 @@ let letterGroups = [
     "паца",
     "пичка",
     "паца",
-    "свирка"
+    "свирка",
+    "пишка"
 ];
 
 function removeFirstOccurrence(word, letter) {
@@ -20,7 +21,20 @@ function removeFirstOccurrence(word, letter) {
 }
 
 function isGroupPresent(word, group) {
-    return group.split('').every(letter => word.includes(letter));
+    const wordLetterCounts = getLetterCounts(word);
+    const groupLetterCounts = getLetterCounts(group);
+
+    return Object.keys(groupLetterCounts).every(letter => 
+        (wordLetterCounts[letter] || 0) >= groupLetterCounts[letter]
+    );
+}
+
+function getLetterCounts(str) {
+    const counts = {};
+    for (const letter of str) {
+        counts[letter] = (counts[letter] || 0) + 1;
+    }
+    return counts;
 }
 
 function shuffleWord(word) {
