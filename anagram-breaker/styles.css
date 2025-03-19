@@ -34,13 +34,21 @@ input[type="text"]:focus {
 
 button {
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 10px 12px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px;
+    margin: 5px;
+}
+
+.submit {
+    background-color: green;
+}
+
+.refresh {
+    background-color: #007bff;
 }
 
 button:hover {
@@ -52,6 +60,10 @@ button:hover {
     font-weight: bold;
     height: 30px; /* Fixed height to prevent layout shift */
     line-height: 30px; /* Align text vertically in the center */
+}
+
+.info {
+    color: #007bff;
 }
 
 .correct {

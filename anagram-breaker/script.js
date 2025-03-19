@@ -43,17 +43,31 @@ function checkGuess() {
         result.className = "correct";
         setTimeout(() => {
             newWord();
-        }, 2000);
+        }, 1500);
     } else {
         result.textContent = "Грешен отговор. Опитайте отново.";
         result.className = "incorrect";
     }
 }
 
-// Listen for the Enter key press in the input field
+function showOriginalWord() {
+    const result = document.getElementById("result");
+    result.textContent = "Търсената дума беше " + originalWord.toUpperCase();
+    result.className = "info";
+    setTimeout(() => {
+        newWord();
+    }, 1500);
+}
+
 document.getElementById("guess").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         checkGuess();
+    }
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        showOriginalWord();
     }
 });
 
