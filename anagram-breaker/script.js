@@ -2,7 +2,8 @@ let originalWord = "";
 let letterGroups = [
     ["к", "у", "р"],
     ["п", "у", "т", "к", "а"],
-    ["п", "е", "н", "и", "с"]
+    ["п", "е", "н", "и", "с"],
+    ["а", "н", "а", "л"]
 ];
 
 function removeFirstOccurrence(word, letter) {
@@ -55,10 +56,11 @@ async function loadWords() {
 
 async function newWord() {
     const words = await loadWords();
-    const minLength = parseInt(document.getElementById("minLength").value); 
+    const minLength = parseInt(document.getElementById("minLength").value);
+    maxLength = (minLength === 8) ? Number.MAX_SAFE_INTEGER : minLength + 1;
 
     // Filter words based on the selected minimum length
-    const filteredWords = words.filter(word => word.length >= minLength && word.length <= minLength + 1);
+    const filteredWords = words.filter(word => word.length >= minLength && word.length <= maxLength);
 
     if (filteredWords.length === 0) {
         document.getElementById("word").textContent = "Няма налични думи с тази дължина!";
