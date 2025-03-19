@@ -1,9 +1,14 @@
 let originalWord = "";
 let letterGroups = [
-    ["к", "у", "р"],
-    ["п", "у", "т", "к", "а"],
-    ["п", "е", "н", "и", "с"],
-    ["а", "н", "а", "л"]
+    "кур",
+    "путка",
+    "пенис",
+    "анал",
+    "курва",
+    "паца",
+    "пичка",
+    "паца",
+    "свирка"
 ];
 
 function removeFirstOccurrence(word, letter) {
@@ -15,7 +20,7 @@ function removeFirstOccurrence(word, letter) {
 }
 
 function isGroupPresent(word, group) {
-    return group.every(letter => word.includes(letter));
+    return group.split('').every(letter => word.includes(letter));
 }
 
 function shuffleWord(word) {
@@ -26,8 +31,8 @@ function shuffleWord(word) {
 
     letterGroups.forEach(group => {
         if (!groupFound && isGroupPresent(word, group)) {
-            groupedLetters.push(group.join(''));
-            group.forEach(letter => {
+            groupedLetters.push(group);
+            group.split('').forEach(letter => {
                 finalWord = removeFirstOccurrence(finalWord, letter);
             });
 
@@ -57,7 +62,7 @@ async function loadWords() {
 async function newWord() {
     const words = await loadWords();
     const minLength = parseInt(document.getElementById("minLength").value);
-    maxLength = (minLength === 8) ? Number.MAX_SAFE_INTEGER : minLength + 1;
+    const maxLength = (minLength === 8) ? Number.MAX_SAFE_INTEGER : (minLength + 1);
 
     // Filter words based on the selected minimum length
     const filteredWords = words.filter(word => word.length >= minLength && word.length <= maxLength);
