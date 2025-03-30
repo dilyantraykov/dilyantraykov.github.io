@@ -68,7 +68,7 @@ function shuffleWord(word) {
 }
 
 async function loadWords() {
-    const response = await fetch("words.txt");
+    const response = await fetch("words-bg.txt");
     const text = await response.text();
     return text.split("\n").map(word => word.trim()).filter(word => word.length > 0);
 }
