@@ -33,19 +33,21 @@ I recently purchased a GoPro and have started learning to edit my own videos wit
 
 I studied in the [First English Language School](https://www.fels-sofia.org/) in **Sofia** from **2008** to **2013** where I focused on **English** and **Mathematics**. In this period I helped build the school's local [newspaper's website](https://www.facebook.com/zelen.domat/) and participated in the school's football team winning the **Goalscorer trophy** in the **Bulgarian Football School League** in the **2011 / 2012** season. My final diploma grade (including the pre-university examinations) is **5.85** / 6.
 
-I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** and stuying a lot of **algebra** and **geometry** apart from the beginner coding before deciding to drop out. During the same time I got an internship as a **Web Developer** at [Cranial Ink](https://www.cranialink.com/) where I mostly built and maintained **WordPress** websites (with **PHP** and **MySQL**).
+I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two years of studying **Computer Science** and studying a lot of **algebra** and **geometry** apart from the beginner coding before deciding to drop out. During the same time I got an internship as a **Web Developer** at [Cranial Ink](https://www.cranialink.com/) where I mostly built and maintained **WordPress** websites (with **PHP** and **MySQL**).
 
 I then rolled up for the [Telerik Academy](http://telerikacademy.com/) and in just over a year passed more than **15 courses**, most of which with **excellent grades**. I received certificates for my performance in the [C# Developer](http://my.telerikacademy.com/certificates/View/1587/30ce1177), [JavaScript Developer](https://my.telerikacademy.com/certificates/view/1684/dc9899b8), [Web Developer](https://my.telerikacademy.com/Certificates/View/1964/89e94b9a) and [Web Front-end Developer](http://my.telerikacademy.com/certificates/View/2179/d3b5390d) tracks and graduated from the academy with specialization in [Web Application Development](https://my.telerikacademy.com/certificates/view/1783/0b31ed0f). During the academy is when I got offered my first job at Progress (then Telerik) and started my long journey with desktop development.
 
-In the summer of 2018 I actually decided that it may be a good idea to finally finish my studies and get a diploma. I signed up for the **New Bulgarian University** in Sofia and got accreditation for my two years in Sofia University so I started my studies from the 3rd year. I successfully finished the [Game Development module](https://ecatalog.nbu.bg/default.asp?V_Year=2023&Mod_ID=284&PageShow=programpresent&P_Menu=courses_part2&Fac_ID=3&M_PHD=&P_ID=2206&TabIndex=1) in the university. 
+In the summer of 2018 I actually decided that it may be a good idea to finally finish my studies and get a diploma. I signed up for the **New Bulgarian University** in Sofia and got accreditation for my two years in Sofia University so I started my studies from the 3rd year. I successfully finished the [Game Development module](https://ecatalog.nbu.bg/default.asp?V_Year=2023&Mod_ID=284&PageShow=programpresent&P_Menu=courses_part2&Fac_ID=3&M_PHD=&P_ID=2206&TabIndex=1) in the university after successfully defending my final project -  **InstaSport** - a "Desktop Application for Organizing Sport Events". I'm soon planning to publish this project for Windows, Android and iPhone, so stay tuned!
 
-In my last year, I decided to go on the **Erasmus** program and spent my last official semester in **Zagreb** where I had lots of fun and met many interesting people with whom we still make a few reunions each year. You can see some videos from this amazing experience and our reunions in my dedicated [What Did Dido Do](https://www.youtube.com/@whatdiddidodo/videos) channel on YouTube.
+<h2 id="erasmus"><i class="fa-solid fa-right-left" aria-hidden="true"></i>Erasmus</h2>
+
+In my last year of university, I decided to go on the **Erasmus** program and spent my last official semester in **Zagreb** where I had lots of fun and met many interesting people with whom we still make a few reunions each year. You can see some videos from this amazing experience and our reunions in my dedicated [What Did Dido Do](https://www.youtube.com/@whatdiddidodo/videos) channel on YouTube.
 
 To my surprise, I achieved a level of **C2** on my final [language assessment](certificates/english-assessment.pdf) after the program.
 
 Sadly, I had to come back to Sofia in July, but I did not spend much time here as we organized a number of trips with my new Erasmus friends. I then decided to sign up for **ESN** in Sofia and am now an [official member](https://accounts.esn.org/user/dtraykov), taking my weekly dose of Erasmus experience.
 
-<h2 id="volunteer-work"><i class="fas fa-hands-helping" aria-hidden="true"></i>Volunteer Work</h2>
+<h2 id="volunteer-work"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>Volunteer Work</h2>
 
 I have volunteered on a number of projects including the **Elevation Music Festival** in 2012 and the **Balkan Youth Festival** in Sandanski in 2012 and 2013.
 
@@ -71,6 +73,16 @@ I recently created a fun drinking game which you can play with your friends when
 <a href='https://apps.microsoft.com/detail/9n78z0qwszqv'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='Get Eks It in the Microsoft Store' style='width: 142px; height: 52px;'/></a>
 
 <a href='https://play.google.com/store/apps/details?id=com.dilyantraykov.eksit' style='display: inline; margin-left: 1.5em;'><img src='images/get-it-on-google-play.png' alt='Get Eks It in Google Play' style='height: 52px;'/></a>
+
+</div>
+
+<h2 id="gramana"><i class="fa fa-font" aria-hidden="true"></i>Gramana Mega</h2>
+
+I recently also developed an anagram game in which you can challenge your friends. It is available for **Android** on the **Google Play** store and you can download it by clicking the following button:
+
+<div style='margin-bottom: 1.5em'>
+
+<a href='https://play.google.com/store/apps/details?id=com.dilyantraykov.gramana' style='display: inline; margin-left: 1.5em;'><img src='../images/get-it-on-google-play.png' alt='Get Gramana Mega in Google Play' style='height: 52px;'/></a>
 
 </div>
 
