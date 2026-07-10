@@ -7,7 +7,7 @@ title: Intro
 
 Hi! My name is... What? My name is... Who? My name is **Dilyan Traykov**! I'm a young and ambitious software developer, amateur graphic designer, and board-game enthusiast.
 
-I currently work as a .NET developer at [EGT Digital](https://egt-digital.com/) where I create functionality and fix issues for the Sportsbook Module of our [X-Nave platform](https://egt-digital.com/x-nave-platform/sport/) which is used by a number of popular bookmaker websites.
+I currently work as a .NET developer at [EGT Digital](https://egt-digital.com/) where I create functionality and fix issues for the Sports Betting Module of our [X-Nave platform](https://egt-digital.com/x-nave-platform/sport/) which is used by a number of popular bookmaker websites.
 
 <img src="images/maui.jpg" style="float: right; width: 100px; margin-left: 1em" alt=".NET MAUI" />
 
