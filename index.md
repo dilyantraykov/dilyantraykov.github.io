@@ -37,7 +37,7 @@ I then signed up for [Sofia University](https://www.uni-sofia.bg/) and spent two
 
 I then rolled up for the [Telerik Academy](http://telerikacademy.com/) and in just over a year passed more than **15 courses**, most of which with **excellent grades**. I received certificates for my performance in the [C# Developer](http://my.telerikacademy.com/certificates/View/1587/30ce1177), [JavaScript Developer](https://my.telerikacademy.com/certificates/view/1684/dc9899b8), [Web Developer](https://my.telerikacademy.com/Certificates/View/1964/89e94b9a) and [Web Front-end Developer](http://my.telerikacademy.com/certificates/View/2179/d3b5390d) tracks and graduated from the academy with specialization in [Web Application Development](https://my.telerikacademy.com/certificates/view/1783/0b31ed0f). During the academy is when I got offered my first job at Progress (then Telerik) and started my long journey with desktop development.
 
-In the summer of 2018 I actually decided that it may be a good idea to finally finish my studies and get a diploma. I signed up for the **New Bulgarian University** in Sofia and got accreditation for my two years in Sofia University so I started my studies from the 3rd year. I successfully finished the [Game Development module](https://ecatalog.nbu.bg/default.asp?V_Year=2023&Mod_ID=284&PageShow=programpresent&P_Menu=courses_part2&Fac_ID=3&M_PHD=&P_ID=2206&TabIndex=1) in the university after successfully defending my final project -  **InstaSport** - a "Desktop Application for Organizing Sport Events". I'm soon planning to publish this project for Windows, Android and iPhone, so stay tuned!
+In the summer of 2018 I actually decided that it may be a good idea to finally finish my studies and get a diploma. I signed up for the **New Bulgarian University** in Sofia and got accreditation for my two years in Sofia University so I started my studies from the 3rd year. I successfully finished the [Game Development module](https://ecatalog.nbu.bg/default.asp?V_Year=2023&Mod_ID=284&PageShow=programpresent&P_Menu=courses_part2&Fac_ID=3&M_PHD=&P_ID=2206&TabIndex=1) in the university after successfully defending my final project -  **InstaSport** - a "Desktop Application for Organizing Sport Events". It later transformed to the [Lakomche](#lakomche) app which is now available at [lakomche.com](https://lakomche.com) and in the Google Play Store.
 
 <h2 id="erasmus"><i class="fa-solid fa-right-left" aria-hidden="true"></i>Erasmus</h2>
 
@@ -83,6 +83,18 @@ I recently also developed an anagram game in which you can challenge your friend
 <div style='margin-bottom: 1.5em'>
 
 <a href='https://play.google.com/store/apps/details?id=com.dilyantraykov.gramana' style='display: inline;'><img src='../images/get-it-on-google-play.png' alt='Get Gramana Mega in Google Play' style='height: 52px;'/></a>
+
+</div>
+
+<h2 id="lakomche"><i class="fa-solid fa-futbol" aria-hidden="true"></i>Lakomche</h2>
+
+My final university project later transformed into the **Lakomche** application. It allows users to quickly and efficiently organize matches for different sports and for players to easily join already created games.
+
+Apart from the official website at [lakomche.com](https://lakomche.com), the application is available for **Android** on the **Google Play** store and you can download it by clicking the following button:
+
+<div style='margin-bottom: 1.5em'>
+
+<a href='https://play.google.com/store/apps/details?id=com.dilyantraykov.lakomche' style='display: inline;'><img src='../images/get-it-on-google-play.png' alt='Get Lakomche in Google Play' style='height: 52px;'/></a>
 
 </div>
 
