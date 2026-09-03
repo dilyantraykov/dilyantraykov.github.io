@@ -96,7 +96,7 @@ Apart from the official website at [lakomche.com](https://lakomche.com), the app
 
 <a href='https://play.google.com/store/apps/details?id=com.dilyantraykov.lakomche' style='display: inline;'><img src='../images/get-it-on-google-play.png' alt='Get Lakomche in Google Play' style='height: 52px;'/></a>
 
-<a href="https://apps.apple.com/bg/app/lakomche/id6793885374?itscg=30200&amp;itsct=apps_box_badge&amp;mttnsubad=6793885374" style="display: inline-block;"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/us-us?releaseDate=1788393600" alt="Download Lakomche on the App Store" style="width: 156px; height: 52px; vertical-align: middle; object-fit: contain;" /></a>
+<a href="https://apps.apple.com/bg/app/lakomche/id6793885374?itscg=30200&amp;itsct=apps_box_badge&amp;mttnsubad=6793885374" style="display: inline-block;"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1788393600" alt="Download Lakomche on the App Store" style="width: 156px; height: 52px; vertical-align: middle; object-fit: contain;" /></a>
 
 </div>
 
