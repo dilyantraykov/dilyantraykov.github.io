@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Poprad & Budapest — Trip Plan</title>
+    <style>
+      :root {
+        --bg: #08111f;
+        --card: #101b2d;
+        --card2: #142239;
+        --text: #f4f7fb;
+        --muted: #a9b5c7;
+        --line: #263852;
+        --accent: #67e8c6;
+        --accent2: #69a9ff;
+        --warn: #ffd166;
+        --shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: radial-gradient(
+          circle at top,
+          #142744 0,
+          #08111f 38%,
+          #060c16 100%
+        );
+        color: var(--text);
+        font:
+          15px/1.45 Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        min-height: 100vh;
+      }
+      .wrap {
+        width: min(920px, calc(100% - 28px));
+        margin: auto;
+        padding: 28px 0 60px;
+      }
+      .hero {
+        padding: 20px 4px 24px;
+        text-align: center;
+      }
+      .brandline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        margin-bottom: 12px;
+      }
+      .brand {
+        color: var(--accent);
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        font-size: clamp(18px, 4.5vw, 24px);
+      }
+      .presents {
+        color: var(--muted);
+        font-size: clamp(12px, 3vw, 15px);
+        font-weight: 600;
+        font-style: italic;
+        letter-spacing: 0.04em;
+      }
+      .hero h1 {
+        font-size: clamp(32px, 7vw, 48px);
+        line-height: 1.05;
+        margin: 6px 0 10px;
+      }
+      .hero .trip-dates {
+        color: #dce6f3;
+        margin: 0;
+        font-size: clamp(20px, 5vw, 28px);
+        font-weight: 750;
+        letter-spacing: 0.025em;
+      }
+      .chips {
+        justify-content: center;
+      }
+      .chips {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 16px;
+      }
+      .chip {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.04);
+        padding: 7px 10px;
+        border-radius: 999px;
+        color: #dce6f3;
+        font-size: 13px;
+      }
+      .day {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: linear-gradient(
+          145deg,
+          rgba(20, 34, 57, 0.97),
+          rgba(13, 24, 41, 0.97)
+        );
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        margin: 13px 0;
+      }
+      .day summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 17px 18px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 13px;
+        align-items: center;
+      }
+      .day summary::-webkit-details-marker {
+        display: none;
+      }
+      .datebox {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background: linear-gradient(145deg, var(--accent2), #8f7cff);
+        display: grid;
+        place-items: center;
+        line-height: 1;
+      }
+      .datebox b {
+        font-size: 20px;
+      }
+      .datebox span {
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-top: 3px;
+      }
+      .day-title strong {
+        font-size: 17px;
+        display: block;
+      }
+      .day-title span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .chev {
+        font-size: 22px;
+        transition: 0.2s;
+        color: var(--muted);
+      }
+      details[open] .chev {
+        transform: rotate(180deg);
+      }
+      .content {
+        border-top: 1px solid var(--line);
+        padding: 7px 14px 17px;
+      }
+      .event {
+        display: grid;
+        grid-template-columns: 68px 1fr auto;
+        gap: 10px;
+        align-items: center;
+        padding: 12px 3px;
+        border-bottom: 1px solid rgba(38, 56, 82, 0.72);
+      }
+      .event:last-of-type {
+        border-bottom: 0;
+      }
+      .time {
+        font-weight: 800;
+        color: var(--accent);
+        font-variant-numeric: tabular-nums;
+      }
+      .event.unknown .time {
+        color: var(--warn);
+      }
+      .event.fixed .time {
+        color: #ff5d6c;
+        text-shadow: 0 0 14px rgba(255, 93, 108, 0.22);
+      }
+      .event-text {
+        min-width: 0;
+      }
+      .event-text b {
+        font-weight: 700;
+      }
+      .event-text small {
+        display: block;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+      .map {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+        text-decoration: none;
+        color: #07121d;
+        background: var(--accent);
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 850;
+        transition: 0.15s;
+      }
+      .map:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.05);
+      }
+      .map.generic {
+        background: #d8e4f5;
+        color: #0b1626;
+      }
+      .resources {
+        margin-top: 14px;
+        padding: 13px;
+        background: rgba(5, 12, 23, 0.42);
+        border: 1px solid var(--line);
+        border-radius: 13px;
+      }
+      .resources strong {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      .resources a {
+        color: #a9d5ff;
+        text-decoration: none;
+        display: block;
+        overflow-wrap: anywhere;
+        margin: 5px 0;
+      }
+      .resources a:hover {
+        text-decoration: underline;
+      }
+      .note {
+        color: var(--muted);
+        font-size: 12px;
+        margin: 16px 4px 0;
+      }
+      .footer {
+        text-align: center;
+        color: #718199;
+        font-size: 12px;
+        padding-top: 25px;
+      }
+      @media (max-width: 620px) {
+        .wrap {
+          width: min(100% - 18px, 920px);
+          padding-top: 12px;
+        }
+        .hero {
+          padding: 14px 5px 18px;
+        }
+        .day {
+          border-radius: 15px;
+        }
+        .day summary {
+          padding: 14px 12px;
+          grid-template-columns: auto 1fr auto;
+        }
+        .datebox {
+          width: 43px;
+          height: 43px;
+          border-radius: 12px;
+        }
+        .day-title strong {
+          font-size: 15px;
+        }
+        .content {
+          padding: 5px 10px 14px;
+        }
+        .event {
+          grid-template-columns: 55px minmax(0, 1fr) auto;
+          gap: 7px 8px;
+          padding: 12px 2px;
+          align-items: center;
+        }
+        .map {
+          grid-column: 3;
+          justify-self: end;
+          padding: 8px 9px;
+        }
+        .time {
+          font-size: 13px;
+        }
+        .event-text {
+          font-size: 14px;
+        }
+      }
+
+      /* Weekday identity colors — coordinated with the blue theme */
+      .day {
+        --day-accent: #59c3ff;
+        --day-accent2: #8f7cff;
+        --day-tint: rgba(89, 195, 255, 0.1);
+        border-color: color-mix(in srgb, var(--day-accent) 34%, var(--line));
+      }
+      .day summary {
+        background: linear-gradient(105deg, var(--day-tint), transparent 58%);
+        position: relative;
+      }
+      .day summary::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(
+          180deg,
+          var(--day-accent),
+          var(--day-accent2)
+        );
+      }
+      .day .datebox {
+        background: linear-gradient(
+          145deg,
+          var(--day-accent),
+          var(--day-accent2)
+        );
+        box-shadow: 0 7px 20px
+          color-mix(in srgb, var(--day-accent) 24%, transparent);
+      }
+      .day .day-title strong {
+        color: color-mix(in srgb, var(--day-accent) 34%, white);
+      }
+      .day.friday {
+        --day-accent: #49a8ff;
+        --day-accent2: #697cff;
+        --day-tint: rgba(73, 168, 255, 0.12);
+      }
+      .day.saturday {
+        --day-accent: #8279ff;
+        --day-accent2: #aa6cff;
+        --day-tint: rgba(130, 121, 255, 0.12);
+      }
+      .day.sunday {
+        --day-accent: #b66cff;
+        --day-accent2: #e071d0;
+        --day-tint: rgba(182, 108, 255, 0.11);
+      }
+      .day.monday {
+        --day-accent: #43c6c8;
+        --day-accent2: #3c9fd9;
+        --day-tint: rgba(67, 198, 200, 0.11);
+      }
+      .day.tuesday {
+        --day-accent: #48b8e8;
+        --day-accent2: #4f8fff;
+        --day-tint: rgba(72, 184, 232, 0.11);
+      }
+      .day.wednesday {
+        --day-accent: #638cff;
+        --day-accent2: #7771e8;
+        --day-tint: rgba(99, 140, 255, 0.11);
+      }
+      .day.thursday {
+        --day-accent: #55b9a9;
+        --day-accent2: #4b9fc7;
+        --day-tint: rgba(85, 185, 169, 0.11);
+      }
+      .day[open] {
+        box-shadow:
+          0 16px 40px rgba(0, 0, 0, 0.24),
+          0 0 0 1px color-mix(in srgb, var(--day-accent) 16%, transparent);
+      }
+
+      .tabs {
+        display: flex;
+        gap: 8px;
+        margin: 4px 0 18px;
+        padding: 5px;
+        background: rgba(5, 12, 23, 0.48);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+      }
+      .tab-btn {
+        flex: 1;
+        border: 0;
+        border-radius: 10px;
+        padding: 11px 14px;
+        background: transparent;
+        color: var(--muted);
+        font: inherit;
+        font-weight: 800;
+        cursor: pointer;
+      }
+      .tab-btn.active {
+        background: linear-gradient(135deg, #397fc4, #596fd6);
+        color: white;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      }
+      .tab-panel {
+        display: none;
+      }
+      .tab-panel.active {
+        display: block;
+      }
+      .sezir-notes {
+        margin-top: 14px;
+        padding: 13px;
+        background: rgba(255, 209, 102, 0.07);
+        border: 1px solid rgba(255, 209, 102, 0.28);
+        border-radius: 13px;
+      }
+      .sezir-notes strong {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #ffd166;
+        margin-bottom: 8px;
+      }
+      .sezir-notes ul {
+        margin: 0;
+        padding-left: 20px;
+        color: #dce6f3;
+      }
+      .sezir-notes li + li {
+        margin-top: 5px;
+      }
+      .cuisine-card {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: linear-gradient(
+          145deg,
+          rgba(20, 34, 57, 0.97),
+          rgba(13, 24, 41, 0.97)
+        );
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+      .cuisine-head {
+        padding: 18px;
+        border-bottom: 1px solid var(--line);
+      }
+      .cuisine-head h2 {
+        margin: 0 0 4px;
+        font-size: 20px;
+      }
+      .cuisine-head p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .cuisine-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .cuisine-table th,
+      .cuisine-table td {
+        padding: 13px 14px;
+        text-align: left;
+        border-bottom: 1px solid rgba(38, 56, 82, 0.72);
+      }
+      .cuisine-table th {
+        color: var(--muted);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+      }
+      .cuisine-table tr:last-child td {
+        border-bottom: 0;
+      }
+      .country {
+        font-size: 22px;
+      }
+      .food-link {
+        text-align: right;
+      }
+      .food-link a {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        text-decoration: none;
+        color: #07121d;
+        background: var(--accent);
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 850;
+      }
+      .category-pill {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 999px;
+        background: rgba(105, 169, 255, 0.12);
+        border: 1px solid rgba(105, 169, 255, 0.24);
+        font-size: 12px;
+        color: #dce6f3;
+      }
+      @media (max-width: 620px) {
+        .tabs {
+          position: sticky;
+          top: 6px;
+          z-index: 10;
+          backdrop-filter: blur(10px);
+        }
+        .cuisine-table th,
+        .cuisine-table td {
+          padding: 11px 8px;
+        }
+        .cuisine-table th:nth-child(3),
+        .cuisine-table td:nth-child(3) {
+          text-align: center;
+        }
+        .food-link a {
+          padding: 8px;
+          font-size: 0;
+        }
+        .food-link a::before {
+          content: "↗";
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <div class="brandline">
+          <span class="brand">SEZIR TRAVEL</span
+          ><span class="presents">presents</span>
+        </div>
+        <h1>Poprad & Budapest</h1>
+        <p class="trip-dates">16-25 October 2026</p>
+        <div class="chips">
+          <span class="chip">🇸🇰 Poprad & Tatras</span
+          ><span class="chip">🇭🇺 Budapest</span
+          ><span class="chip">🚐 Road trip</span
+          ><span class="chip">🥾 Hikes</span><span class="chip">♨️ SPA</span>
+        </div>
+      </header>
+      <nav class="tabs" aria-label="Trip sections">
+        <button class="tab-btn active" data-tab="schedule">Schedule</button
+        ><button class="tab-btn" data-tab="cuisine">Local Cuisine</button>
+      </nav>
+      <section id="schedule" class="tab-panel active">
+        <div id="days"></div>
+      </section>
+      <section id="cuisine" class="tab-panel">
+        <div id="cuisineContent"></div>
+      </section>
+      <p class="note">Poprad & Budapest Trip plan • October 2026</p>
+      <div class="footer">© 2026 Sezir Travel. All rights reserved.</div>
+    </main>
+    <script>
+      const days = [
+        {
+          d: "16",
+          dow: "Friday",
+          title: "ROAD TO POPRAD",
+          events: [
+            [
+              "12:25",
+              "T2 Sofia Airport departure",
+              "https://maps.app.goo.gl/4v6wMRdavXtEuTRg7",
+            ],
+            [
+              "12:45",
+              "Budapest Airport arrival",
+              "https://maps.app.goo.gl/HPJ8xpEaFYpEePyH7",
+            ],
+            [
+              "13:30",
+              "Pick up the rental van & something to eat on the road",
+              "Budapest Airport car rental",
+            ],
+            [
+              "16:00",
+              "Miskolctapolca Cave Bath",
+              "Miskolctapolca Cave Bath",
+              "3h SPA ticket • 6000 HUF",
+            ],
+            ["19:00", "Dinner in Miskolctapolca", "Miskolctapolca restaurants"],
+            [
+              "20:00",
+              "Groceries shopping & departure for Poprad",
+              "Miskolc supermarket",
+              "Shopping from Miskolc / Košice",
+            ],
+            [
+              "23:00",
+              "Check-in at vacation house in Poprad",
+              "https://maps.app.goo.gl/ZmgsxQAeYu8M64Ae7",
+            ],
+          ],
+          res: ["https://www.barlangfurdo.hu/en"],
+        },
+        {
+          d: "17",
+          dow: "Saturday",
+          title: "POPRAD",
+          events: [
+            [
+              "10:00",
+              "Walk around Sobotske namestie & brunch",
+              "Sobotské námestie Poprad",
+            ],
+            [
+              "11:30",
+              "Walk around Poprad centre",
+              "https://maps.app.goo.gl/XJ1t8S4PmemCHgVTA",
+            ],
+            ["13:30", "Spišský hrad", "Spiš Castle", "12 EUR"],
+            [
+              "16:00",
+              "Walk in the historic town of Levoča",
+              "https://maps.app.goo.gl/WnDHiZnZfkyxYgo1A",
+            ],
+            [
+              "19:00",
+              "Dinner in Poprad",
+              "Beňovský Bistro & Market Poprad",
+              "Beňovský Bistro / Restart Burger / Doma u nás / Salaš Slavkov",
+            ],
+          ],
+          res: [
+            "https://maps.app.goo.gl/w8nRn55FtWvGra4T8",
+            "https://maps.app.goo.gl/k6oLXUgPEvoTT1s78",
+            "https://maps.app.goo.gl/n71BTzoT7Y8atx5SA",
+            "https://maps.app.goo.gl/WemhxdssUzUZKAuFA",
+          ],
+        },
+        {
+          d: "18",
+          dow: "Sunday",
+          title: "POPRAD",
+          events: [
+            [
+              "10:00",
+              "Hike around Štrbské pleso",
+              "https://maps.app.goo.gl/9QNxNabBz2hwEwWN8",
+            ],
+            [
+              "19:00",
+              "Dinner in Poprad",
+              "Minipivovar Tatras Poprad",
+              "Minipivovar Tatras / Popradská Plzeňka / Dobré časy",
+            ],
+            [
+              "Optional",
+              "Ride the Rack Railway to Hrebienok & hike around",
+              "https://maps.app.goo.gl/EXGsED3PttHUy1JCA",
+              "15 EUR",
+            ],
+          ],
+          res: [
+            "https://maps.app.goo.gl/xLcZCtotwfk9He2F6",
+            "https://maps.app.goo.gl/prvuayMJy2YEDGsZ8",
+            "https://maps.app.goo.gl/xhw1mLPUCPoF7RHf9",
+            "https://maps.app.goo.gl/x1fdaQLRLnjfXowD7",
+          ],
+        },
+        {
+          d: "19",
+          dow: "Monday",
+          title: "POPRAD",
+          events: [
+            ["10:00", "Oravský hrad", "Orava Castle"],
+            ["12:00", "Lunch", "Orava Slovakia restaurants"],
+            ["14:00", "Vlkolínec", "https://maps.app.goo.gl/akkZkbLXNtZnKsih7"],
+            ["16:00", "Bobrovník", "Bobrovník Slovakia"],
+            ["19:00", "Dinner in Poprad", "Poprad restaurants"],
+          ],
+          res: [
+            "https://maps.app.goo.gl/eLD1iCjfxCH9fYqK7",
+            "https://maps.app.goo.gl/HcjaZsBZ5dEyPM3V6",
+            "https://www.vlkolinec.sk/",
+          ],
+        },
+        {
+          d: "20",
+          dow: "Tuesday",
+          title: "POPRAD",
+          events: [
+            ["10:00", "Hike in Slovenský raj", "Slovenský raj National Park"],
+            ["Optional", "Skalnaté pleso", "Skalnaté pleso"],
+            [
+              "Optional",
+              "Lomnický štít",
+              "https://maps.app.goo.gl/zoUGxCkahH3vNAqn8",
+              "89 EUR",
+            ],
+          ],
+          res: [
+            "https://maps.app.goo.gl/o2wgNT2GDBR3xBXR9",
+            "https://maps.app.goo.gl/ynQCgkYcA4X6CPhi6",
+            "https://www.npsr.sk/en/hiking-trails",
+          ],
+        },
+        {
+          d: "21",
+          dow: "Wednesday",
+          title: "POPRAD",
+          events: [
+            ["10:00", "Belianska jaskyňa", "Belianska jaskyňa", "15 EUR"],
+            [
+              "11:00",
+              "Kežmarský hrad & walk on Hradné námestie",
+              "Kežmarok Castle",
+              "10 EUR",
+            ],
+            [
+              "12:50",
+              "TatraTea Tour & EXCLUSIVE TASTING",
+              "Tatratea Karloff Kežmarok",
+              "30 EUR",
+            ],
+            [
+              "Optional",
+              "Treetop Walk Bachledka",
+              "Treetop Walk Bachledka",
+              "29 EUR",
+            ],
+          ],
+          res: [
+            "https://maps.app.goo.gl/cFDFDEJgRoiWD71s9",
+            "https://maps.app.goo.gl/WwhH5t3vycNacSdZ9",
+            "https://maps.app.goo.gl/Y8jCSYiqyxRQkdXc6",
+            "https://maps.app.goo.gl/gaAuwjdzX8oY2WuB9",
+            "https://karloff.sk/en/tours/",
+          ],
+        },
+        {
+          d: "22",
+          dow: "Thursday",
+          title: "POPRAD",
+          events: [
+            ["10:00", "Hike in Slovenský raj", "Slovenský raj National Park"],
+            ["Optional", "SPA at AquaCity Poprad", "AquaCity Poprad", "28 EUR"],
+          ],
+          res: [
+            "https://maps.app.goo.gl/h1GzFW9DSkc3MUyVA",
+            "https://www.npsr.sk/en/hiking-trails",
+          ],
+        },
+        {
+          d: "23",
+          dow: "Friday",
+          title: "ROAD TO BUDAPEST",
+          events: [
+            [
+              "08:00",
+              "Check-out & depart towards Budapest",
+              "Budapest Hungary",
+            ],
+            ["13:30", "Return the rental van", "Budapest Airport car rental"],
+            [
+              "14:30",
+              "Check-in Doma Apartment",
+              "https://maps.app.goo.gl/3n8bgYD8iPLEjx2S9",
+            ],
+            ["15:30", "Nagy Imre statue", "Nagy Imre Statue Budapest"],
+            ["15:40", "Ronald Reagan statue", "Ronald Reagan Statue Budapest"],
+            [
+              "16:00",
+              "Shoes on the Danube memorial",
+              "Shoes on the Danube Bank Budapest",
+            ],
+            ["16:15", "Deák Ferenc statue", "Deák Ferenc Statue Budapest"],
+            ["16:30", "Herend Tree of Life", "Herend Tree of Life Budapest"],
+            [
+              "16:50",
+              "Vörösmarty tér",
+              "https://maps.app.goo.gl/sdKu21THk1esfDsL7",
+            ],
+            ["18:45", "IKONO", "IKONO Budapest", "6400 HUF"],
+            [
+              "19:40",
+              "Van Gogh Budapest Temporary Exhibition & Giant Moon",
+              "Van Gogh exhibition Budapest",
+              "6000 HUF",
+            ],
+            [
+              "20:50",
+              "Dinner at Hell's Kitchen Restaurant",
+              "Hell's Kitchen Budapest",
+            ],
+            ["23:00", "Drinking at Ruin Bars", "Szimpla Kert Budapest"],
+          ],
+          res: [
+            "https://maps.app.goo.gl/LPmy2AzecasameT1A",
+            "https://ikono.global/en/budapest/tickets",
+            "https://www.vangogh-kiallitas.hu/en",
+          ],
+        },
+        {
+          d: "24",
+          dow: "Saturday",
+          title: "BUDAPEST",
+          notes: ["At 04:00 the clocks switch 1 hour backwards to 03:00"],
+          events: [
+            [
+              "09:30",
+              "St. Stephen’s Basilica",
+              "St. Stephen Basilica Budapest",
+              "2600 HUF",
+            ],
+            ["10:10", "Rendőr szobor", "Fat Policeman Statue Budapest"],
+            [
+              "10:30",
+              "Underground Railway Museum",
+              "Underground Railway Museum Budapest",
+              "1000 HUF",
+            ],
+            ["11:00", "Sissi statue", "Sissi statue Budapest"],
+            [
+              "11:20",
+              "Opera House — take the historic M1 metro",
+              "Hungarian State Opera House",
+            ],
+            ["13:20", "Lunch", "Budapest restaurants"],
+            [
+              "13:50",
+              "Museum of Fine Arts",
+              "Museum of Fine Arts Budapest",
+              "5800 HUF",
+            ],
+            ["15:30", "Heroes' Square", "Heroes Square Budapest"],
+            [
+              "15:50",
+              "Revolution of 1956 Monument",
+              "1956 Revolution Monument Budapest",
+            ],
+            [
+              "16:30",
+              "Vajdahunyad Castle, Dracula Mini-statue & George Castriota statue",
+              "Vajdahunyad Castle",
+            ],
+            [
+              "Optional",
+              "Széchenyi Bath Beer SPA",
+              "Thermal Beer Spa Budapest",
+              "26400 HUF • bath ticket not included",
+            ],
+            ["19:30", "Dinner", "Budapest restaurants"],
+            [
+              "21:30",
+              "SPA Party in Széchenyi Bath",
+              "https://maps.app.goo.gl/bKUZsPqNCVRX4i1k7",
+              "74 EUR",
+            ],
+            [
+              "02:00",
+              "End of SPA Party",
+              "https://maps.app.goo.gl/bKUZsPqNCVRX4i1k7",
+            ],
+            [
+              "Optional",
+              "Try the Game Over Escape Room",
+              "Game Over Escape Rooms Budapest",
+            ],
+          ],
+          res: [
+            "https://spartybooking.com/",
+            "https://www.getyourguide.com/budapest-l29/budapest-the-ultimate-late-night-spa-party-ticket-t386559/?ranking_uuid=42b6acd2-b242-435a-a0db-0a8913812f03&referral_redirect=1&q=Budapest&adults=1",
+            "https://thermalbeerspa.com/en/booking/",
+            "https://budapest.escapegameover.hu/en",
+          ],
+        },
+        {
+          d: "25",
+          dow: "Sunday",
+          title: "BUDAPEST",
+          events: [
+            [
+              "08:00",
+              "Vote for president at the Bulgarian Embassy",
+              "Embassy of Bulgaria Budapest",
+            ],
+            ["09:30", "Liberty Bridge", "Liberty Bridge Budapest"],
+            [
+              "09:40",
+              "Szent István Király szobra",
+              "https://maps.app.goo.gl/h9d6P8JZYZF5hD9z8",
+            ],
+            ["10:30", "Citadella", "Citadella Budapest", "4900 HUF"],
+            [
+              "11:40",
+              "Garden of Philosophers",
+              "Garden of Philosophers Budapest",
+            ],
+            [
+              "12:00",
+              "Erzsébet királyné statue",
+              "Queen Elisabeth Statue Budapest",
+            ],
+            [
+              "12:30",
+              "Buda Castle Labyrinth",
+              "Labyrinth Buda Castle",
+              "2500 HUF",
+            ],
+            [
+              "13:00",
+              "Matthias Church",
+              "Matthias Church Budapest",
+              "3400 HUF",
+            ],
+            [
+              "15:00",
+              "Take the 100E airport express shuttle",
+              "https://maps.app.goo.gl/khZACMHqpzCFs4aA7",
+            ],
+            [
+              "18:25",
+              "Budapest Airport departure",
+              "https://maps.app.goo.gl/HPJ8xpEaFYpEePyH7",
+            ],
+            [
+              "20:50",
+              "T2 Sofia Airport arrival",
+              "https://maps.app.goo.gl/4v6wMRdavXtEuTRg7",
+            ],
+          ],
+          res: ["https://maps.app.goo.gl/x6z7VAC2a2HEzoUn8"],
+        },
+      ];
+      const esc = (s) =>
+        String(s).replace(
+          /[&<>"']/g,
+          (m) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            })[m],
+        );
+      const mapUrl = (q) =>
+        /^https?:\/\//i.test(q)
+          ? q
+          : "https://www.google.com/maps/search/?api=1&query=" +
+            encodeURIComponent(restaurantQuery(q));
+      const restaurantQuery = (q) => {
+        const needsOpenNow =
+          /restaurants?|dinner|lunch|brunch|supermarkets?|groceries|grocery|shopping/i.test(
+            q,
+          );
+        return needsOpenNow ? q + " open now" : q;
+      };
+      const cuisine = [
+        [
+          "Bryndzové halušky",
+          "Main Dish",
+          "🇸🇰",
+          "https://www.tasteatlas.com/bryndzove-halusky",
+        ],
+        ["Kapustnica", "Soup", "🇸🇰", "https://www.tasteatlas.com/kapustnica"],
+        ["Lokše", "Snack", "🇸🇰", "https://www.tasteatlas.com/lokse"],
+        [
+          "Tatratea",
+          "Alcohol",
+          "🇸🇰",
+          "https://heyzine.com/flip-book/88b2576f4e.html",
+        ],
+        [
+          "Spišská borovička",
+          "Alcohol",
+          "🇸🇰",
+          "https://www.tasteatlas.com/spisska-borovicka",
+        ],
+        ["Kofola", "Beverage", "🇸🇰", "https://www.kofola.cz/en/products"],
+        [
+          "Strapačky",
+          "Main Dish",
+          "🇸🇰",
+          "https://www.tasteatlas.com/strapacky",
+        ],
+        [
+          "Zemiakové placky",
+          "Snack",
+          "🇸🇰",
+          "https://www.tasteatlas.com/zemiakove-placky",
+        ],
+        ["Gulyás", "Soup", "🇭🇺", "https://www.tasteatlas.com/gulyas"],
+        ["Halászlé", "Soup", "🇭🇺", "https://www.tasteatlas.com/halaszle"],
+        ["Lángos", "Snack", "🇭🇺", "https://www.tasteatlas.com/langos"],
+        ["Pörkölt", "Main Dish", "🇭🇺", "https://www.tasteatlas.com/porkolt"],
+        [
+          "Paprikás csirke",
+          "Main Dish",
+          "🇭🇺",
+          "https://www.tasteatlas.com/paprikas-csirke",
+        ],
+        [
+          "Hortobágyi palacsinta",
+          "Appetizers",
+          "🇭🇺",
+          "https://www.tasteatlas.com/hortobagyi-palacsinta",
+        ],
+        [
+          "Dobostorta",
+          "Dessert",
+          "🇭🇺",
+          "https://www.sprinklebakes.com/2021/12/hungarian-dobos-torte.html",
+        ],
+        [
+          "Esterházy torta",
+          "Dessert",
+          "🇭🇺",
+          "https://www.tasteatlas.com/esterhazy-torta",
+        ],
+        [
+          "Kürtőskalács",
+          "Snack",
+          "🇭🇺",
+          "https://www.tasteatlas.com/kurtoskalacs",
+        ],
+        [
+          "Rakott krumpli",
+          "Main Dish",
+          "🇭🇺",
+          "https://www.tasteatlas.com/rakott-krumpli",
+        ],
+        ["Pálinka", "Alcohol", "🇭🇺", "https://www.tasteatlas.com/palinka"],
+        [
+          "Tokaji wine",
+          "Alcohol",
+          "🇭🇺",
+          "https://en.wikipedia.org/wiki/Tokaji",
+        ],
+      ];
+      const categoryOrder = [
+        "Salad",
+        "Soup",
+        "Appetizers",
+        "Main Dish",
+        "Dessert",
+        "Snack",
+        "Alcohol",
+        "Beverage",
+      ];
+      const countryOrder = { "🇸🇰": 0, "🇭🇺": 1 };
+      cuisine.sort(
+        (a, b) =>
+          countryOrder[a[2]] - countryOrder[b[2]] ||
+          categoryOrder.indexOf(a[1]) - categoryOrder.indexOf(b[1]) ||
+          a[0].localeCompare(b[0]),
+      );
+      const fixedEvents = new Set([
+        "T2 Sofia Airport departure",
+        "Pick up the rental van & something to eat on the road",
+        "TatraTea Tour & EXCLUSIVE TASTING",
+        "Return the rental van",
+        "SPA Party in Széchenyi Bath",
+        "Budapest Airport departure",
+      ]);
+      document.querySelector("#days").innerHTML = days
+        .map(
+          (day, i) =>
+            `<details class="day ${day.dow.toLowerCase()}" ${i === 0 ? "open" : ""}><summary><div class="datebox"><b>${day.d}</b><span>OCT</span></div><div class="day-title"><strong>${esc(day.dow + " - " + day.title)}</strong><span>${day.events.length} activities</span></div><div class="chev">⌄</div></summary><div class="content">${day.events.map((e) => `<div class="event ${e[0] === "Optional" ? "unknown" : ""} ${fixedEvents.has(e[1]) ? "fixed" : ""}"><div class="time">${esc(e[0])}</div><div class="event-text"><b>${esc(e[1])}</b>${e[3] ? `<small>${esc(e[3])}</small>` : ""}</div><a class="map" target="_blank" rel="noopener" href="${mapUrl(e[2])}" aria-label="Open ${esc(e[1])} in Google Maps">⌖ Maps</a></div>`).join("")}${day.notes?.length ? `<div class="sezir-notes"><strong>Sezir's Notes</strong><ul>${day.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></div>` : ""}${
+              day.res.filter((r) => !r.includes("maps.app.goo.gl")).length
+                ? `<div class="resources"><strong>Resources</strong>${day.res
+                    .filter((r) => !r.includes("maps.app.goo.gl"))
+                    .map(
+                      (r) =>
+                        `<a target="_blank" rel="noopener" href="${esc(r)}">↗ ${esc(r.replace(/^https?:\/\//, "").replace(/\/$/, ""))}</a>`,
+                    )
+                    .join("")}</div>`
+                : ""
+            }</div></details>`,
+        )
+        .join("");
+      document.querySelector("#cuisineContent").innerHTML =
+        `<div class="cuisine-card"><div class="cuisine-head"><h2>Local Cuisine</h2><p>Sezir selected traditional Slovak and Hungarian food & drinks to try during the trip.</p></div><div style="overflow-x:auto"><table class="cuisine-table"><thead><tr><th>Name</th><th>Category</th><th>Country</th><th></th></tr></thead><tbody>${cuisine.map((x) => `<tr><td><b>${esc(x[0])}</b></td><td><span class="category-pill">${esc(x[1])}</span></td><td class="country">${x[2]}</td><td class="food-link"><a target="_blank" rel="noopener" href="${esc(x[3])}">↗ More</a></td></tr>`).join("")}</tbody></table></div></div>`;
+      document.querySelectorAll(".tab-btn").forEach((btn) =>
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.toggle("active", b === btn));
+          document
+            .querySelectorAll(".tab-panel")
+            .forEach((p) =>
+              p.classList.toggle("active", p.id === btn.dataset.tab),
+            );
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }),
+      );
+    </script>
+  </body>
+</html>
