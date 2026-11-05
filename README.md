@@ -1,5 +1,5 @@
-Hello,
+# Dilyan Traykov — Personal Portfolio & Showcase
 
-My name is Dilyan Traykov and this is the repository for my personal website hosted @ https://dtraykov.me.
+Repository for my personal website hosted at [dtraykov.me](https://dtraykov.me).
 
-If you find any typos or want to suggest any improvements for the website, feel free to open a new pull request or contact me directly. :)
+Built with modern, lightweight semantic HTML5, CSS3 with CSS variables and dark/light mode support, and vanilla JavaScript (zero heavy dependencies, zero build steps, zero bloat).

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K3K7FY7T0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0K3K7FY7T0');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5195685859890338" crossorigin="anonymous"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dilyan Traykov — Software Developer, App Creator & Casual Adventurer</title>
+  <meta name="description" content="Hi, I'm Dilyan Traykov — .NET developer, creator of Lakomche & Eks It, Microsoft certified professional, and all-around sports lover based in Sofia, Bulgaria.">
+  <meta name="author" content="Dilyan Traykov">
+  <link rel="canonical" href="https://dtraykov.me/">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dtraykov.me/">
+  <meta property="og:title" content="Dilyan Traykov — Software Developer & App Creator">
+  <meta property="og:description" content=".NET developer, creator of Lakomche & Eks It, Microsoft certified professional, and casual adventurer.">
+  <meta property="og:image" content="https://dtraykov.me/images/avatar.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dilyan Traykov — Software Developer & App Creator">
+  <meta name="twitter:description" content=".NET developer, creator of Lakomche & Eks It, Microsoft certified professional, and casual adventurer.">
+  <meta name="twitter:image" content="https://dtraykov.me/images/avatar.jpg">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Modern Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#intro" class="brand-link">
+        <div class="brand-avatar">
+          <img src="images/avatar.jpg" alt="Dilyan Traykov">
+          <span class="status-dot" title="Available for interesting chats & fun ideas"></span>
+        </div>
+        <span>Dilyan Traykov</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#intro" class="nav-link active">Intro</a>
+        <a href="#apps" class="nav-link">Apps & Games</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#life" class="nav-link">Life & Sports</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions: Theme & Mobile Button -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <!-- Moon Icon (for Dark) -->
+          <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M12.3 22A10 10 0 0 0 22 12.3a1 1 0 0 0-1.14-.99A8.02 8.02 0 0 1 12.7 3.14a1 1 0 0 0-.99-1.14A10 10 0 0 0 2 12a10 10 0 0 0 10.3 10zm-1.8-17.8c.27 1.05.77 2.05 1.5 2.9a10 10 0 0 0 8 4.1 8 8 0 1 1-9.5-7z"/>
+          </svg>
+          <!-- Sun Icon (for Light) -->
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1zm0 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1zm10-9h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM4 12H2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zm14.07-7.07a1 1 0 0 0-1.41 0l-1.42 1.42a1 1 0 1 0 1.42 1.41l1.41-1.41a1 1 0 0 0 0-1.42zM7.34 16.66a1 1 0 0 0-1.41 0l-1.42 1.41a1 1 0 1 0 1.42 1.42l1.41-1.42a1 1 0 0 0 0-1.41zm10.73 1.42-1.41-1.42a1 1 0 1 0-1.42 1.42l1.42 1.41a1 1 0 0 0 1.41-1.41zM6.93 5.93 5.51 4.51a1 1 0 0 0-1.41 1.42l1.41 1.41a1 1 0 0 0 1.42-1.41z"/>
+          </svg>
+        </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         Hero Section
+         ======================================================================== -->
+    <section id="intro" class="section hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left: Headline & Bio -->
+          <div class="hero-content">
+            <div class="hero-pill-badge">
+              <span>👋</span> Sofia, Bulgaria &bull; Software Developer &bull; Creator
+            </div>
+            
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Dilyan Traykov</span>.
+            </h1>
+
+            <p class="hero-intro-lead">
+              <span id="eminem-quote" class="casual-highlight" title="Click for a little easter egg!">
+                "Hi! My name is... What? My name is... Who?"
+              </span><br>
+              I'm a software developer, amateur graphic designer, board-game enthusiast, and all-around sports lover who loves turning ideas into polished apps.
+            </p>
+
+            <p>
+              By day, I build high-performance systems as a <strong>.NET developer at <a href="https://egt-digital.com/" target="_blank" rel="noopener">EGT Digital</a></strong> for the Sports Betting Module of our <a href="https://egt-digital.com/x-nave-platform/sport/" target="_blank" rel="noopener">X-Nave platform</a>. Previously, I crafted cross-platform components for <strong><a href="https://www.telerik.com/maui-ui" target="_blank" rel="noopener">Telerik UI for .NET MAUI</a></strong> and supported engineers across WinUI, WPF &amp; Silverlight at <strong><a href="https://www.progress.com/" target="_blank" rel="noopener">Progress</a></strong>.
+            </p>
+
+            <!-- Skill & Passion Chips -->
+            <div class="hero-chips">
+              <span class="hero-chip">💻 C# &amp; .NET Specialist</span>
+              <span class="hero-chip">📱 Mobile &amp; Desktop Apps</span>
+              <span class="hero-chip">🏆 Microsoft Certified</span>
+              <span class="hero-chip">🏃 100km Ultra Finisher</span>
+              <span class="hero-chip">🍻 Ex-Pub Crawl Guide</span>
+              <span class="hero-chip">🎬 Premiere &amp; Photoshop</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hero-actions">
+              <a href="#apps" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                Explore Apps &amp; Games
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Get in Touch
+              </a>
+              <a href="https://buymeacoffee.com/dtraykov" target="_blank" rel="noopener" class="btn btn-beer">
+                <span>🍺</span> Buy me a beer
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Hero Profile Card -->
+          <div class="hero-card">
+            <div class="profile-header">
+              <div class="avatar-large-wrap">
+                <img src="images/avatar.jpg" alt="Dilyan Traykov" class="avatar-large">
+                <div class="avatar-badge-icon" title="Certified Developer">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="profile-meta">
+                <h3>Dilyan Traykov</h3>
+                <p>Senior .NET Engineer &amp; Indie Creator</p>
+              </div>
+            </div>
+
+            <!-- Current Role Box -->
+            <div class="current-status-box">
+              <div class="status-label">
+                <span class="status-dot" style="position:static; display:inline-block; margin-right:4px;"></span> Current Role
+              </div>
+              <div class="status-text">
+                Building sports betting modules @ <a href="https://egt-digital.com/" target="_blank" rel="noopener">EGT Digital</a>
+              </div>
+            </div>
+
+            <!-- Quick Stats Grid -->
+            <div class="hero-stats-grid">
+              <div class="stat-box">
+                <div class="stat-number">10+</div>
+                <div class="stat-desc">Years in Software Development</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">3</div>
+                <div class="stat-desc">Published Apps &amp; Games</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">100 km</div>
+                <div class="stat-desc">Vitosha Ultra Finisher (18h 52m)</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">C2</div>
+                <div class="stat-desc">Fluent English Assessment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Featured Apps & Creations Section
+         ======================================================================== -->
+    <section id="apps" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Showcase</span>
+          <h2 class="section-title">Apps &amp; Games I've Shipped</h2>
+          <p class="section-desc">
+            When I'm not writing enterprise .NET backends, I build games and mobile applications designed to bring friends together, solve everyday problems, or just get people laughing.
+          </p>
+        </div>
+
+        <div class="apps-grid">
+          <!-- App 1: Lakomche -->
+          <div class="app-card featured">
+            <div class="app-card-top">
+              <div class="app-icon-wrap app-icon-lakomche">
+                ⚽
+              </div>
+              <h3 class="app-title">Lakomche</h3>
+              <p class="app-desc">
+                Born as my university thesis project (InstaSport) and transformed into a full production app. Lakomche allows sports enthusiasts to organize matches for football, basketball, volleyball and more, and lets players easily find and join games nearby.
+              </p>
+              <div class="app-tags">
+                <span class="app-tag">Android</span>
+                <span class="app-tag">iOS</span>
+                <span class="app-tag">Web App</span>
+                <span class="app-tag">Sports Community</span>
+              </div>
+            </div>
+            <div class="app-badges-row">
+              <a href="https://play.google.com/store/apps/details?id=com.dilyantraykov.lakomche" target="_blank" rel="noopener" class="store-badge-link" title="Get Lakomche on Google Play">
+                <img src="images/get-it-on-google-play.png" alt="Get Lakomche on Google Play">
+              </a>
+              <a href="https://apps.apple.com/bg/app/lakomche/id6793885374" target="_blank" rel="noopener" class="store-badge-link" title="Download Lakomche on the App Store">
+                <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1788393600" alt="Download on App Store" style="height: 42px;">
+              </a>
+              <a href="https://lakomche.com" target="_blank" rel="noopener" class="web-app-btn">
+                <span>lakomche.com</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- App 2: Eks It -->
+          <div class="app-card">
+            <div class="app-card-top">
+              <div class="app-icon-wrap app-icon-eksit">
+                🍻
+              </div>
+              <h3 class="app-title">Eks It</h3>
+              <p class="app-desc">
+                A fun, chaotic drinking game created for those hangouts when everyone is bored and wants to get silly for a change. Packed with unpredictable cards, hilarious challenges, and multilingual card packs (EN &amp; BG).
+              </p>
+              <div class="app-tags">
+                <span class="app-tag">Android</span>
+                <span class="app-tag">Windows / MSIX</span>
+                <span class="app-tag">Party Game</span>
+                <span class="app-tag">Multilingual</span>
+              </div>
+            </div>
+            <div class="app-badges-row">
+              <a href="https://play.google.com/store/apps/details?id=com.dilyantraykov.eksit" target="_blank" rel="noopener" class="store-badge-link" title="Get Eks It on Google Play">
+                <img src="images/get-it-on-google-play.png" alt="Get Eks It on Google Play">
+              </a>
+              <a href="https://apps.microsoft.com/detail/9n78z0qwszqv" target="_blank" rel="noopener" class="store-badge-link" title="Get Eks It in the Microsoft Store">
+                <img src="https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png" alt="Get Eks It in Microsoft Store" style="height: 42px;">
+              </a>
+              <a href="EksIt/" class="web-app-btn">
+                <span>Game Details</span> &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- App 3: Gramana Mega -->
+          <div class="app-card">
+            <div class="app-card-top">
+              <div class="app-icon-wrap app-icon-gramana">
+                🔤
+              </div>
+              <h3 class="app-title">Gramana Mega</h3>
+              <p class="app-desc">
+                A fast-paced anagram puzzle game where you can challenge friends and test your vocabulary, mental agility, and speed under time pressure.
+              </p>
+              <div class="app-tags">
+                <span class="app-tag">Android</span>
+                <span class="app-tag">Word Game</span>
+                <span class="app-tag">Brain Workout</span>
+              </div>
+            </div>
+            <div class="app-badges-row">
+              <a href="https://play.google.com/store/apps/details?id=com.dilyantraykov.gramana" target="_blank" rel="noopener" class="store-badge-link" title="Get Gramana Mega on Google Play">
+                <img src="images/get-it-on-google-play.png" alt="Get Gramana Mega on Google Play">
+              </a>
+              <a href="anagram-breaker/" class="web-app-btn" title="Try the web anagram solver">
+                <span>Anagram Breaker Tool</span> &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Experience & Engineering Craftsmanship Section
+         ======================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career</span>
+          <h2 class="section-title">Experience &amp; Technical Background</h2>
+          <p class="section-desc">
+            A solid track record of architecting developer tools, high-throughput sports betting engines, and robust desktop &amp; mobile solutions.
+          </p>
+        </div>
+
+        <div class="experience-list">
+          <!-- Role 1: EGT Digital -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div class="exp-role-company">
+                <h3>.NET Software Developer</h3>
+                <div class="exp-company"><a href="https://egt-digital.com/" target="_blank" rel="noopener">EGT Digital</a> &bull; Sofia, Bulgaria</div>
+              </div>
+              <span class="exp-period">Current</span>
+            </div>
+            <div class="exp-body">
+              <p>
+                Developing core features and resolving complex backend challenges for the <strong>Sports Betting Module</strong> of EGT Digital's <a href="https://egt-digital.com/x-nave-platform/sport/" target="_blank" rel="noopener">X-Nave platform</a>. The system powers real-time odds, bet placement, and high-volume transaction processing for leading international bookmaker platforms.
+              </p>
+              <div class="exp-tech-tags">
+                <span class="exp-tag">C#</span>
+                <span class="exp-tag">.NET</span>
+                <span class="exp-tag">High Throughput</span>
+                <span class="exp-tag">Microservices</span>
+                <span class="exp-tag">Sports Betting</span>
+                <span class="exp-tag">Real-Time Data</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: Progress (Telerik) Developer -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div class="exp-role-company">
+                <h3>Software Developer — Telerik UI for .NET MAUI</h3>
+                <div class="exp-company"><a href="https://www.progress.com/" target="_blank" rel="noopener">Progress (Telerik)</a> &bull; Sofia, Bulgaria</div>
+              </div>
+              <span class="exp-period">Previous</span>
+            </div>
+            <div class="exp-body">
+              <p>
+                Engineered UI components and cross-platform features for the flagship <a href="https://www.telerik.com/maui-ui" target="_blank" rel="noopener">Telerik UI for .NET MAUI</a> suite, enabling developers worldwide to build native iOS, Android, macOS, and Windows apps from a single codebase.
+              </p>
+              <div class="exp-tech-tags">
+                <span class="exp-tag">.NET MAUI</span>
+                <span class="exp-tag">C#</span>
+                <span class="exp-tag">XAML</span>
+                <span class="exp-tag">Cross-Platform UI</span>
+                <span class="exp-tag">SDK Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3: Progress (Telerik) Senior Tech Support Engineer -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div class="exp-role-company">
+                <h3>Senior Technical Support Engineer — Desktop Platforms</h3>
+                <div class="exp-company"><a href="https://www.progress.com/" target="_blank" rel="noopener">Progress (Telerik)</a> &bull; Sofia, Bulgaria</div>
+              </div>
+              <span class="exp-period">Earlier</span>
+            </div>
+            <div class="exp-body">
+              <p>
+                Specialized in deep technical support and developer consulting for enterprise clients building under <strong>WinUI, WPF, and Silverlight</strong>. Wrote official technical documentation at <a href="https://docs.telerik.com/devtools/wpf/introduction" target="_blank" rel="noopener">Telerik WPF Docs</a>, contributed to public developer forums, and maintained the official <a href="https://github.com/telerik/xaml-docs" target="_blank" rel="noopener">XAML Docs GitHub repository</a>.
+              </p>
+              <div class="exp-tech-tags">
+                <span class="exp-tag">WPF</span>
+                <span class="exp-tag">WinUI</span>
+                <span class="exp-tag">Silverlight</span>
+                <span class="exp-tag">Technical Writing</span>
+                <span class="exp-tag">Debugging</span>
+                <span class="exp-tag">Community Mentorship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 4: Cranial Ink -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div class="exp-role-company">
+                <h3>Web Developer Intern</h3>
+                <div class="exp-company"><a href="https://www.cranialink.com/" target="_blank" rel="noopener">Cranial Ink</a> &bull; Sofia, Bulgaria</div>
+              </div>
+              <span class="exp-period">Early Career</span>
+            </div>
+            <div class="exp-body">
+              <p>
+                Developed and customized client websites with PHP, MySQL, and WordPress. Handled responsive frontend design, server configurations, and database integrations.
+              </p>
+              <div class="exp-tech-tags">
+                <span class="exp-tag">PHP</span>
+                <span class="exp-tag">MySQL</span>
+                <span class="exp-tag">WordPress</span>
+                <span class="exp-tag">HTML &amp; CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Showcase with Lightbox View -->
+        <div class="cert-showcase">
+          <div class="section-header" style="margin-bottom: 1rem;">
+            <h3>Certifications &amp; Competitions</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;">Click on any certificate to preview.</p>
+          </div>
+
+          <div class="cert-grid">
+            <!-- MCP -->
+            <a href="certificates/MCP.jpg" class="cert-card" data-cert-img="certificates/MCP.jpg" data-cert-title="Microsoft Certified Professional">
+              <div>
+                <div class="cert-card-icon">
+                  <img src="images/mcp.svg" alt="Microsoft Certified Professional">
+                </div>
+                <h4>Microsoft Certified Professional (MCP)</h4>
+                <p>Software Development Fundamentals &amp; Programming in C#</p>
+              </div>
+              <span class="cert-view-link">View Certificate &rarr;</span>
+            </a>
+
+            <!-- Telerik C# -->
+            <a href="certificates/CSharpDeveloper.png" class="cert-card" data-cert-img="certificates/CSharpDeveloper.png" data-cert-title="Telerik Academy — C# Developer">
+              <div>
+                <div class="cert-card-icon">⚡</div>
+                <h4>C# Developer Track</h4>
+                <p>C# fundamentals, OOP, data structures &amp; algorithms</p>
+              </div>
+              <span class="cert-view-link">View Certificate &rarr;</span>
+            </a>
+
+            <!-- Telerik JavaScript -->
+            <a href="certificates/JavaScriptDeveloper.png" class="cert-card" data-cert-img="certificates/JavaScriptDeveloper.png" data-cert-title="Telerik Academy — JavaScript Developer">
+              <div>
+                <div class="cert-card-icon">🟨</div>
+                <h4>JavaScript Developer Track</h4>
+                <p>JS fundamentals, DOM manipulation, OOP &amp; SPA architecture</p>
+              </div>
+              <span class="cert-view-link">View Certificate &rarr;</span>
+            </a>
+
+            <!-- Telerik Front-End -->
+            <a href="certificates/FrontEndDeveloper.png" class="cert-card" data-cert-img="certificates/FrontEndDeveloper.png" data-cert-title="Telerik Academy — Front-End Developer">
+              <div>
+                <div class="cert-card-icon">🎨</div>
+                <h4>Front-End Developer Track</h4>
+                <p>HTML5, CSS3, responsive UI layout &amp; modern styling</p>
+              </div>
+              <span class="cert-view-link">View Certificate &rarr;</span>
+            </a>
+
+            <!-- Telerik Web App -->
+            <a href="certificates/WebApplicationDeveloper.png" class="cert-card" data-cert-img="certificates/WebApplicationDeveloper.png" data-cert-title="Telerik Academy — Web Application Developer">
+              <div>
+                <div class="cert-card-icon">🌐</div>
+                <h4>Web App Specialist</h4>
+                <p>Full-stack web application development specialization</p>
+              </div>
+              <span class="cert-view-link">View Certificate &rarr;</span>
+            </a>
+
+            <!-- Kaggle ML (at the end) -->
+            <a href="certificates/kaggle-ml-course.png" class="cert-card" data-cert-img="certificates/kaggle-ml-course.png" data-cert-title="Kaggle Machine Learning Certification">
+              <div>
+                <div class="cert-card-icon">🤖</div>
+                <h4>Intro to Machine Learning</h4>
+                <p>Model validation, feature engineering &amp; Random Forests (Kaggle)</p>
+              </div>
+              <span class="cert-view-link">View Certificate &rarr;</span>
+            </a>
+          </div>
+
+          <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.85rem; align-items: center; justify-content: center; font-size: 0.9rem; color: var(--text-muted);">
+            <span>Also active on:</span>
+            <a href="https://www.codingame.com/profile/aeba2564473c943a5c7e7799b2122b940304311" target="_blank" rel="noopener" style="font-weight: 600;">CodinGame</a> &bull;
+            <a href="https://codefights.com/profile/dTraykov" target="_blank" rel="noopener" style="font-weight: 600;">CodeFights</a> &bull;
+            <a href="https://www.hackerrank.com/dtraykov94" target="_blank" rel="noopener" style="font-weight: 600;">HackerRank</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Education & Erasmus Adventure Section
+         ======================================================================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Journey</span>
+          <h2 class="section-title">Education &amp; Erasmus</h2>
+          <p class="section-desc">
+            A non-linear path of intense curiosity, self-driven learning, and unforgettable international experiences.
+          </p>
+        </div>
+
+        <!-- Mark Twain Quote -->
+        <div class="quote-banner">
+          <blockquote>"Don't let schooling interfere with your education."</blockquote>
+          <cite>&mdash; Mark Twain</cite>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Erasmus -->
+          <div class="edu-card">
+            <span class="edu-icon-badge">🇭🇷 Semester Abroad</span>
+            <h3>Erasmus in Zagreb</h3>
+            <div class="edu-institution">Zagreb, Croatia &bull; 2019</div>
+            <p>
+              Spent my final university semester on the Erasmus program in Zagreb. Made lifelong friends from across Europe with whom we organize annual reunions.
+            </p>
+            <p>
+              Scored a <a href="certificates/english-assessment.pdf" data-cert-src="certificates/english-assessment.pdf" data-cert-title="Erasmus Language Assessment — Level C2"><strong>C2 level</strong> on the final language assessment</a>, and subsequently became an <a href="https://accounts.esn.org/user/dtraykov" target="_blank" rel="noopener">official member of ESN Sofia</a>.
+            </p>
+          </div>
+
+          <!-- New Bulgarian University -->
+          <div class="edu-card">
+            <span class="edu-icon-badge">🎓 Bachelor's Degree</span>
+            <h3>New Bulgarian University</h3>
+            <div class="edu-institution">Game Development &amp; Informatics &bull; Sofia</div>
+            <p>
+              Completed the Game Development module after receiving accreditation for initial coursework at Sofia University.
+            </p>
+            <p>
+              Defended my final project <strong>InstaSport</strong> ("Desktop Application for Organizing Sport Events"), which later evolved into the full-fledged cross-platform <strong>Lakomche</strong> app on Google Play &amp; Apple App Store.
+            </p>
+          </div>
+
+          <!-- Telerik Academy -->
+          <div class="edu-card">
+            <span class="edu-icon-badge">🚀 Software Bootcamp</span>
+            <h3>Telerik Academy</h3>
+            <div class="edu-institution">Specialization in Web Application Development</div>
+            <p>
+              Completed over <strong>15 intensive software engineering courses</strong> in just over a year, graduating with honors across C#, JavaScript, Web Frontend, and Application Architecture tracks.
+            </p>
+            <p>
+              This is where I was offered my first developer role at Progress (Telerik) and launched my deep dive into desktop &amp; mobile framework engineering.
+            </p>
+          </div>
+
+          <!-- First English Language School -->
+          <div class="edu-card">
+            <span class="edu-icon-badge">🏫 High School</span>
+            <h3>First English Language School (FELS)</h3>
+            <div class="edu-institution">Sofia &bull; 2008 &ndash; 2013</div>
+            <p>
+              Graduated with a final diploma grade of <strong>5.85 / 6.00</strong> with a primary focus on English and Mathematics.
+            </p>
+            <p>
+              Co-built the school's local newspaper site, and played for the varsity football team, winning the <strong>Goalscorer Trophy</strong> in the Bulgarian Football School League (2011/2012 season).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Life Beyond Code & Adventures Section
+         ======================================================================== -->
+    <section id="life" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Beyond The Code</span>
+          <h2 class="section-title">Adventures, Sports &amp; Stories</h2>
+          <p class="section-desc">
+            Life isn't meant to be lived exclusively behind a keyboard. When the laptop closes, here's what keeps my adrenaline pumping.
+          </p>
+        </div>
+
+        <div class="adventures-grid">
+          <!-- Card 1: Pub Crawl Guide -->
+          <div class="adv-card">
+            <div>
+              <div class="adv-card-header">
+                <div class="adv-emoji">🍻</div>
+                <div>
+                  <h3>Pub Crawl Guide</h3>
+                  <span style="font-size:0.85rem; color:var(--text-muted);">The New Sofia Pub Crawl</span>
+                </div>
+              </div>
+              <p>
+                Apart from my 9-to-5 job as a programmer, I "worked" as a guide at <a href="http://www.thenewsofiapubcrawl.com/" target="_blank" rel="noopener">The New Sofia Pub Crawl</a> where I entertained travellers and foreigners with my <strong>stupid jokes, lame dance moves, and boring stories</strong>.
+              </p>
+            </div>
+            <div style="font-size:0.88rem; color:var(--text-muted); border-top:1px solid var(--border-subtle); padding-top:0.75rem;">
+              Lesson learned: Great communication is just debugging human interactions in real time.
+            </div>
+          </div>
+
+          <!-- Card 2: Endurance & Marathons -->
+          <div class="adv-card">
+            <div>
+              <div class="adv-card-header">
+                <div class="adv-emoji">🏃</div>
+                <div>
+                  <h3>Marathons &amp; Grit</h3>
+                  <span style="font-size:0.85rem; color:var(--text-muted);">Extreme Challenges</span>
+                </div>
+              </div>
+              <p>
+                I occasionally participate in endurance events to see what the human mind and legs can endure:
+              </p>
+              <ul class="adv-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span><a href="certificates/vitosha-100.pdf" data-cert-src="certificates/vitosha-100.pdf" data-cert-title="Vitosha 100km Finisher Diploma"><strong>Vitosha 100km</strong></a>: 100km finished in 18h 52min after virtually zero preparation.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span><a href="https://www.irun.bg/external.php/competition/result/name/brutus-run-2017/distance/378" target="_blank" rel="noopener"><strong>Brutus Run</strong></a>: 21km obstacle course in -5°C (finished in 3h 55m after getting lost twice).</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span><a href="https://techrun.bg/results-2016-2/" target="_blank" rel="noopener"><strong>Big Tech Run</strong></a>: 10km in 49min 13sec.</span>
+                </li>
+              </ul>
+            </div>
+            <div style="font-size:0.88rem; color:var(--text-muted); border-top:1px solid var(--border-subtle); padding-top:0.75rem;">
+              Also passionate about football (<a href="https://www.youtube.com/watch?v=5RAPqoXur74" target="_blank" rel="noopener">watch my skills compilation</a>), volleyball, tennis, billiards, and beer pong.
+            </div>
+          </div>
+
+          <!-- Card 3: Volunteering & Video Editing -->
+          <div class="adv-card">
+            <div>
+              <div class="adv-card-header">
+                <div class="adv-emoji">🤝</div>
+                <div>
+                  <h3>Volunteering &amp; Media</h3>
+                  <span style="font-size:0.85rem; color:var(--text-muted);">AIESEC, ESN &amp; Video</span>
+                </div>
+              </div>
+              <p>
+                In 2018, I spent 6 weeks on an <a href="certificates/AIESEC_Global_Volunteer.pdf" data-cert-src="certificates/AIESEC_Global_Volunteer.pdf" data-cert-title="AIESEC Global Volunteer Certificate — Wroclaw, Poland">AIESEC exchange in Wroclaw, Poland</a> teaching children ages 5 to 15 on diverse subjects.
+              </p>
+              <p>
+                Also volunteered at the Elevation Music Festival and Balkan Youth Festival, and served as Team Leader of Communications at AIESEC Bulgaria creating graphic designs.
+              </p>
+            </div>
+            <div style="font-size:0.88rem; color:var(--text-muted); border-top:1px solid var(--border-subtle); padding-top:0.75rem;">
+              I edit travel videos with Adobe Premiere on my channel <a href="https://www.youtube.com/@whatdiddidodo/videos" target="_blank" rel="noopener">What Did Dido Do</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Contact & Connect Section
+         ======================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card-main">
+          <h2>"Do you find this website lame and uninformative? I do too."</h2>
+          <p class="contact-lead">
+            Whether you want to collaborate on a software project, debate architecture patterns, challenge me in an anagram match, or just grab a beer in Sofia — my inbox is always open.
+          </p>
+
+          <!-- Email Copy Pill -->
+          <div class="contact-email-box">
+            <span class="email-address">dtraykov94@gmail.com</span>
+            <button id="copy-email-btn" class="copy-btn" type="button" title="Copy email address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <!-- Social Links Grid -->
+          <div class="social-links-grid">
+            <a href="https://www.linkedin.com/in/dtraykov/" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/dilyantraykov" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.youtube.com/@whatdiddidodo/videos" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span>YouTube</span>
+            </a>
+
+            <a href="https://www.instagram.com/dilyantraykov" target="_blank" rel="noopener" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              <span>Instagram</span>
+            </a>
+
+            <a href="https://buymeacoffee.com/dtraykov" target="_blank" rel="noopener" class="social-pill" style="border-color: rgba(245, 158, 11, 0.4);">
+              <span>☕</span>
+              <span>Buy Me a Coffee</span>
+            </a>
+
+            <a href="mailto:dtraykov94@gmail.com" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Direct Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>&copy; 2026 Dilyan Traykov. Built with pride &amp; clean code.</p>
+        <span class="footer-credit">Handcrafted with modern static HTML, CSS &amp; vanilla JS. Zero frameworks, zero bloat.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#intro">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Toast Notification
+       ======================================================================== -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span class="toast-text">Email copied to clipboard!</span>
+  </div>
+
+  <!-- ========================================================================
+       Certificate Modal Lightbox (Images & PDFs)
+       ======================================================================== -->
+  <div id="cert-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-cert-title">Certificate</h3>
+        <div class="modal-header-actions">
+          <a id="modal-cert-ext" href="" target="_blank" rel="noopener" class="modal-action-btn" title="Open in new tab / download">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <button id="modal-close-btn" class="modal-close-btn" type="button" aria-label="Close modal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <img id="modal-cert-img" src="" alt="Certificate Preview" style="display:none;">
+        <iframe id="modal-cert-pdf" class="modal-pdf-frame" src="" style="display:none;"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buy Me a Coffee floating widget -->
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="dtraykov" data-description="Support me on Buy me a coffee!" data-message="Thanks for visiting! If you want to support me or simply get me a beer, that would be greatly appreciated!" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+  <!-- Lightweight App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
+
