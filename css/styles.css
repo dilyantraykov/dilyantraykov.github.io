@@ -738,6 +738,16 @@ strong {
   color: var(--accent-purple);
 }
 
+.app-icon-groupod {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.2) 0%, rgba(2, 132, 199, 0.4) 100%);
+  color: var(--accent-blue);
+}
+
+.app-icon-skitnik {
+  background: linear-gradient(135deg, rgba(23, 166, 163, 0.2) 0%, rgba(11, 93, 142, 0.4) 100%);
+  color: #17a6a3;
+}
+
 .app-title {
   font-size: 1.45rem;
   margin-bottom: 0.5rem;
